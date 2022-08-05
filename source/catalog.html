@@ -1,0 +1,170 @@
+DOCTYPE html>
+<html class='page' lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona Gallery</title>
+</head>
+
+<body class='page__body'>
+    <hedaer class='main-header'>
+        <a class='main-header__logo'>
+            <img class='main-heder__logo-image' src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
+        </a>
+        <nav class='main-navigation'>
+            <button class='main-navigation--toggle' type='button'>
+                <span class='visual-hidden'>Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class='main-nav__list site-list'>
+                    <li class='site-list__item site-list--index-site'>
+                        <a href='index.html'>Главная</a>
+                    </li>
+                    <li class='site-list__item'>
+                        <a href='#'>Фото и видео</a>
+                    </li>
+                    <li class='site-list__item'>
+                        <a href='#'>Форма отзыва</a>
+                    </li>
+                    <li class='site-list__item'>
+                        <a href='#'>HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </hedaer>
+
+    <main class="main-container">
+        <h1 class='visually-hidden'>Каталог</h1>
+        <section class='page-image'>
+            <img class='page-image__text-image' src="./img/text-index.svg.svg">
+        </section>
+        <section class='gallery'>
+            <header class='gallery__header header-page'>
+                <h2 class='gallery__header title title--primary'>
+                    Фото и видео
+                </h2>
+                <p class='gallery__header subtitle subtitle--primary'>
+                    Не можете решиться на путешествие<br>
+                    из-за курса? Фотографии помогут вам<br>
+                    забыть о политике и экономике.
+                </p>
+            </header>
+            <ul class="gallery__list">
+                <li class='gallery__item gallery-item'>
+                    <img class='gallery-item__image-photo' src='./img/photo-1-mobile.jpg.png' alt='road to Sedona'>
+
+                    <h3 class='gallery-item__title'>неродные просторы</h3>
+                    <dl class='gallery-item__description-list'>
+                        <dt class='gallery-item__autor'>Автор фото:</dt>
+                        <dd class='gallery-item__name'> Борис</dd>
+                        <dt class='gallery-item__icon'>
+                            <img class='image-block__image-icon' src='./img/like-icon.svg.svg' alt='likes'>
+                        </dt>
+                        <dd class='gallery-item__likes'>1350</dd>
+                    </dl>
+                </li>
+                <li class='gallery__item gallery-item'>
+                    <img class='gallery-item__image-photo' src='./img/photo-2-mobile.jpg.png' alt='flora of Sedona'>
+
+                    <h3 class='gallery-item__title'>местная растительность</h3>
+                    <dl class='gallery-item__description-list'>
+                        <dt class='gallery-item__autor'>Автор фото:</dt>
+                        <dd class='gallery-item__name'> Сергей</dd>
+                        <dt class='gallery-item__icon'>
+                            <img class='image-block__image-icon' src='./img/like-icon.svg.svg' alt='likes'>
+                        </dt>
+                        <dd class='gallery-item__likes'>143</dd>
+                    </dl>
+                </li>
+                <li class='gallery__item gallery-item'>
+                    <img class='gallery-item__image-photo' src='./img/photo-3-mobile.jpg.png' alt='road to north'>
+
+                    <h3 class='gallery-item__title'>дорога на север</h3>
+                    <dl class='gallery-item__description-list'>
+                        <dt class='gallery-item__autor'>Автор фото:</dt>
+                        <dd class='gallery-item__name'> Петр</dd>
+                        <dt class='gallery-item__icon'>
+                            <img class='image-block__image-icon' src='./img/like-icon.svg.svg' alt='likes'>
+                        </dt>
+                        <dd class='gallery-item__likes'>96</dd>
+                    </dl>
+                </li>
+                <li class='gallery__item gallery-item'>
+                    <img class='gallery-item__image-photo' src='./img/photo-4-mobile.jpg.png' alt='road to north'>
+
+                    <h3 class='gallery-item__title'>мотст дьявола</h3>
+                    <dl class='gallery-item__description-list'>
+                        <dt class='gallery-item__autor'>Автор фото:</dt>
+                        <dd class='gallery-item__name'> Антон</dd>
+                        <dt class='gallery-item__icon'>
+                            <img class='image-block__image-icon' src='./img/like-icon.svg.svg' alt='likes'>
+                        </dt>
+                        <dd class='gallery-item__likes'>254</dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section class = 'gallery-video'>
+            <header class='gallery-video__header header-page'>
+                <h2 class='gallery-video__header title title--primary'>
+                    Все еще сомневаетесь?
+                </h2>
+                <p class='gallery-video__header subtitle subtitle--primary'>
+                    Смотрите видеопрезентацию и<br>
+                    скорее за билетами, пока они<br>
+                    не подорожали в очередной раз!
+                </p>
+                <img class ='gallery-video__video' src = './img/video-mobile.jpg.png'>
+            </header>
+        </section>
+    </main>
+    <footer class='main-footer'>
+        <a class='main-footer__hesh-tag' href="#">
+            <p class='main-footer__text'>#visitsedona</p>
+        </a>
+        <div class="social-icon">
+            <a class='social-icon__vk' href='#'>
+                <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
+            </a>
+            <a class='social-icon__tg' href='#'>
+                <img class='vk-icon' src='./img/social-tg.svg' alt='Telegram'>
+            </a>
+            <a class='social-icon__utb' href='#'>
+                <img class='vk-icon' src='./img/social utb.svg' alt='YouTube'>
+            </a>
+        </div>
+        <div class="developed">
+            <p></p>
+            <a class='developed-icon__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
+                <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
+            </a>
+        </div>
+    </footer>
+    <div class='modal-failure'>
+        <b class='modal-failure__title'>Что-то пошло не так!</b>
+        <p class='modal-failure__text subtitle subtitle--primary'>
+            Проверьте поля, выделенные<br>
+            красным, скорее всего вы<br>
+            забыли их заполнить
+        </p>
+        <button class='modal-failure__button button button--failure' type='button'>Ок</button>
+    </div>
+
+    <div class='modal-success'>
+        <b class='modal-success__title title'>Ваш отзыв отправлен!</b>
+        <p class='modal-success__text subtitle subtitle--primary'>
+            Спасибо за ваше участие, ваш<br>
+            отзыв уже поступил к нам.<br>
+            В ближайшее время мы<br>
+            опубликуем его на сайте.
+        </p>
+        <div class='modal-succsess__wrapper'>
+            <button class='modal-success__button button button--success' type='button'>Закрыть окно</button>
+        </div>
+    </div>
+</body>
+
+</html>
