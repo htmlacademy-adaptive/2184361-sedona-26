@@ -1,139 +1,139 @@
 <!DOCTYPE html>
 <html class='page' lang="ru">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
+
 <body class='page__body'>
-  <hedaer class='main-header'>
+  <header class='main-header'>
     <a class='main-header__logo'>
       <img class='main-heder__logo-image' src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
     </a>
-    <nav class='main-navigation'>
+    <nav class='main-header__nav main-navigation'>
       <button class='main-navigation--toggle' type='button'>
         <span class='visual-hidden'>Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class='main-nav__list site-list'>
-          <li class='site-list__item site-list--index-site'>
-            <a href='#'>Главная</a>
-          </li>
-          <li class='site-list__item'>
-            <a href='#'>Фото и видео</a>
-          </li>
-          <li class='site-list__item'>
-            <a href='#'>Форма отзыва</a>
-          </li>
-          <li class='site-list__item'>
-            <a href='#'>HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class='main-navigation__list visual-hidden'>
+        <li class='main-navigation__item main-navigation__item--index-site'>
+          <a class='main-navigation__link' href='#'>Главная</a>
+        </li>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link' href='#'>Фото и видео</a>
+        </li>
+        <li class='main-navigation__link' class='main-navigation__item'>
+          <a class='main-navigation__link' href='#'>Форма отзыва</a>
+        </li>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link' href='#'>HTML Academy</a>
+        </li>
+      </ul>
     </nav>
-  </hedaer>
+  </header>
   <main class="main-container">
     <section class='page-image'>
-      <img class='page-image__text-image' src="./img/text-index.svg.svg">
+      <h1 class="visual-hidden">Sedona</h1>
+      <img class='page-image__text-image' src="./img/text-index.svg.svg" alt="promo sedona" width="282" height="214">
     </section>
-
     <!-- преимущества -->
     <section class='benefits'>
       <header class='benefits__header header-page'>
-        <h1 class='benefits__title title title--primary'>
-          СЕДОНА — небольшой<br>
-          городок в АРИЗОНЕ,<br>
-          зАСЛУЖИвающий большего!
-        </h1>
-        <h2 class='benefits__subtitle subtitle subtitle--primary'>
+        <h2 class='benefits__header-title title title--primary'>
+          седона — небольшой<br>
+          городок в аризоне,<br>
+          заслуживающий большего!
+        </h2>
+        <p class='benefits__header-description description description--primary'>
           Рассмотрим 5 причин, по которым<br>
           Седона круче, чем гранд каньон!
-        </h2>
+        </p>
       </header>
       <!-- 1 -->
-      <div class="benefits__wrapper">
-        <header class='sub-header sub-header--primary'>
-          <h2 class='benefits__title title title--secandery'>настоящий город</h2>
-          <h3 class='benefits__subtitle subtitle subtitle--secondary'>— №1 —</h3>
 
-          <h3 class='benefits__subtitle subtitle subtitle--secondary'>
-            седона не аттракцион для туристов,<br>
-            там течет своя жизнь
-          </h3>
-        </header>
-        <img class='benefits__image' src='./img/photo-city@1x 1.png' width="320" height="260" alt='sedona street'>
-        <dl class='benefits__list'>
-          <div class='benefits__item'>
-            <dt class='benefis__title title title--primary'>
-              <img class='benefits__icon' src='./img/icon-house.svg.svg' alt='icon-house'>
-              Жилье
-            </dt>
-            <dd class='benefits__subtitle subtitle subtitle--primary'>
-              Рекомендуем пожить в <br>
-              настоящем мотеле, все как в <br>
-              кино!
-            </dd>
-          </div>
-          <div class='benefits__item'>
-            <dt class='benefits__title title title--primary'>
-              <img class='benefits__icon' src='./img/icon-burger.svg.svg' alt='icon-burger'>
-              ЕДА
-            </dt>
-            <dd class='benefits__subtitle subtitle subtitle--primary'>
-              Всегда заказывайте фирменный<br>
-              бургер, Вы не разочаруетесь!
-            </dd>
-          </div>
-          <div class='benefits__item'>
-            <dt class='benefits__title title title--primary'>
-              <img class='benefits__icon' src='./img/icon-gift.svg.svg' alt='icon-gift'>
-              сувениры
-            </dt>
-            <dd class='benefits__subtitle subtitle subtitle--primary'>
-              Не только китайского, но и<br>
-              местного производства!
-            </dd>
-          </div>
-        </dl>
-        <!-- 2 -->
-        <header class='sub-header sub-header--primary'>
-          <h2 class='benefits__title title title--secondary'>там есть мост дьявола</h2>
-          <h3 class='benefits__subtitle subtitle subtitle--secondary'>— №2 —</h3>
-          <h3 class='benefits__subtitle subtitle subtitle--secondary'>
-            Да, по нему можно пройти! Если вы<br>
-            осмелитесь, конечно
-          </h3>
-        </header>
-        <img class='benefits__image' src='./img/photo-bridge@1x 1.png' width="320" height="260" alt='sedona street'>
-        <!-- 3 -->
-        <div class="benefits__wrapper">
-          <header class='sub-header sub-header--secondary'>
-            <h3 class='benefits__title title title--primary'>небольшая площадь</h3>
-            <h3 class='benefits__subtitle subtitle subtitle--primary'>— №3 —</h3>
-            <h2 class='benefits-subtitle'>
-              Все интересные места находятся<br>
-              очень близко
-            </h2>
-          </header>
+      <header class='sub-header sub-header--primary'>
+        <h2 class='benefits__title title title--secondary'>настоящий городок</h2>
+        <p class='benefits__description description description--secondary'>— №1 —</p>
+
+        <p class='benefits__description description description--secondary'>
+          седона не аттракцион для туристов,<br>
+          там течет своя жизнь
+        </p>
+      </header>
+      <img class='benefits__image' src='./img/photo-city@1x-1.png' width="320" height="260" alt='sedona street'>
+      <dl class='benefits__list'>
+        <div class='benefits__item'>
+          <dt class='benefits__title title title--primary'>
+            <img class='benefits__icon' src='./img/icon-house.svg.svg' alt='icon-house'>
+            Жилье
+          </dt>
+          <dd class='benefits__description description description--primary'>
+            Рекомендуем пожить в <br>
+            настоящем мотеле, все как в <br>
+            кино!
+          </dd>
         </div>
+        <div class='benefits__item'>
+          <dt class='benefits__title title title--primary'>
+            <img class='benefits__icon' src='./img/icon-burger.svg.svg' alt='icon-burger'>
+            Еда
+          </dt>
+          <dd class='benefits__description description description--primary'>
+            Всегда заказывайте фирменный<br>
+            бургер, Вы не разочаруетесь!
+          </dd>
+        </div>
+        <div class='benefits__item'>
+          <dt class='benefits__title title title--primary'>
+            <img class='benefits__icon' src='./img/icon-gift.svg.svg' alt='icon-gift'>
+            Сувениры
+          </dt>
+          <dd class='benefits__description description description--primary'>
+            Не только китайского, но и<br>
+            местного производства!
+          </dd>
+        </div>
+      </dl>
+      <!-- 2 -->
+      <header class='sub-header sub-header--primary'>
+        <h2 class='benefits__title title title--secondary'>там есть мост дьявола</h2>
+        <p class='benefits__description description description--secondary'>— №2 —</p>
+        <p class='benefits__description description description--secondary'>
+          Да, по нему можно пройти! Если вы<br>
+          осмелитесь, конечно
+        </p>
+      </header>
+      <img class='benefits__image' src='./img/photo-bridge@1x-1.png' width="320" height="260" alt='sedona street'>
+      <div class="benefits__wrapper">
+        <!-- 3 -->
+        <header class='sub-header sub-header--secondary'>
+          <h3 class='benefits__title sub-header__title title title--primary'>небольшая площадь</h3>
+          <p class='benefits__description description description description--primary'>— №3 —</p>
+          <p class='benefits__description description description--primary'>
+            Все интересные места находятся<br>
+            очень близко
+          </p>
+        </header>
         <!-- 4 -->
         <header class='sub-header sub-header--secondary'>
           <h2 class='benefits__title title title--primary'>КРАСИВАЯ ДОРОГА</h2>
-          <h3 class='benefits__subtitle subtitle subtitle--primary'>— №4 —</h3>
-          <h3 class='benefits__subtitle subtitle subtitle--primary'>
+          <p class='benefits__description description description--primary'>— №4 —</p>
+          <p class='benefits__description description description--primary'>
             ехать в седону из лас вегаса<br>
             совсем скучно
-          </h3>
+          </p>
         </header>
-      </div>
-      <!-- 5 -->
-      <header class='sub-header sub-header--secondary'>
-        <h2 class='benefits__title title title--primary'>мало туристов</h2>
-        <h3 class='benefits__subtitle subtitle subtitle--primary'>— №5 —</h3>
-        <h3 class='benefits__subtitle subtitle subtitle--primary'>
-          большенство едет в гранд каньен<br>
-          и толпятся там
-        </h3>
-      </header>
+        <!-- 5 -->
+        <header class='sub-header sub-header--secondary'>
+          <h2 class='benefits__title title title--primary'>мало туристов</h2>
+          <p class='benefits__description description description--primary'>— №5 —</p>
+          <p class='benefits__description description description--primary'>
+            большенство едет в гранд каньен<br>
+            и толпятся там
+          <p>
+        </header>
       </div>
     </section>
     <!-- поиск гостиницы -->
@@ -152,8 +152,7 @@
       </button>
       <iframe class='search-hotel__map map'
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774556!2d-111.83015785957862!3d34.8544438152782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1649588223577!5m2!1sru!2sru"
-        width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class='main-footer'>
@@ -165,18 +164,19 @@
         <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
       </a>
       <a class='social-icon__tg' href='#'>
-        <img class='vk-icon' src='./img/social-tg.svg' alt='Telegram'>
+        <img class='tg-icon' src='./img/social-tg.svg' alt='Telegram'>
       </a>
       <a class='social-icon__utb' href='#'>
-        <img class='vk-icon' src='./img/social utb.svg' alt='YouTube'>
+        <img class='utb-icon' src='./img/social-utb.svg' alt='YouTube'>
       </a>
     </div>
     <div class="developed">
-      <p></p>
-      <a class='developed-icon__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
-        <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
+      <p class="developed__description"></p>
+      <a class='developed__htmlacademy' href='https://htmlacademy.ru/intensive/adaptive'>
+        <img class='htmlacademy-icon' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
       </a>
     </div>
   </footer>
 </body>
+
 </html>

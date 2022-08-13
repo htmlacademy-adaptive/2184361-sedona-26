@@ -1,1 +1,17 @@
 // Начните писать стили здесь
+
+@import "./golbal/fonts.scss";
+@import "./golbal/variableColor.scss";
+@import "./blocks/page.scss";
+@import "./mixin.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/visual-hidden.scss";
+@import "./blocks/page-image.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/sub-header.scss";
+@import "./blocks/title.scss";
+@import "./blocks/description.scss";
+@import "./blocks/search-hotel.scss";
+
