@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona form</title>
 </head>
-
 <body class='page__body'>
   <header class='main-header'>
     <a class='main-header__logo'>
@@ -36,82 +35,76 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class='page-image'>
+    <section class='main-container__feedback page-image'>
       <h1 class='visually-hidden'>Форма для отзыва</h1>
-      <img class='page-image__text-image' src="./img/text-index.svg.svg" alt="promo sedona">
+      <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
     </section>
-    <section class='main-form'>
-      <header class='main-form__header header-page'>
-        <h2 class='main-form__header title title--primary'>
+    <section class='feedback'>
+      <header class='feetback__header'>
+        <h2 class='feetback__title title title--primary'>
           Оставьте свой отзыв
         </h2>
-        <p class='main-form__header subtitle subtitle--primary'>
+        <p class='feetback__description description description--primary'>
           Помогите нашим отелям стать лучше!<br>
           оставьте отзыв о них, а также о<br>
           посещенных вами достопримечательностях<br>
         </p>
       </header>
-      <form class='main-form__form form'>
-        <h2 class='form__title title title--primary'>
-          Представьтесь
-        </h2>
-        <fieldset class='form__group'>
-          <legend class='form__legend'>Представьтесь:</legend>
-          <label class='form__label form__label--primary' for='name'>
+      <form class='feetback__form form'>
+        <fieldset class='form__group form__group--self'>
+          <legend class='form__title title title--primary'>Представьтесь:</legend>
+          <label class='form__label description description--label' for='name'>
             Имя<sup>*</sup>:
           </label>
-          <input class='form__input' type='text' id='name' value="Пётр">
-          <label class='form__label form__label--primary' for='surname'>
+          <input class='form__input input' type='text' id='name' value="Пётр">
+          <label class='form__label description description--label' for='surname'>
             Фамилия<sup>*</sup>:
           </label>
-          <input class='form__input' type='text' id='surname' value='Пустота'>
-          <label class='form__label form__label--primary' for='patronymic'>
+          <input class='form__input input' type='text' id='surname' value='Пустота'>
+          <label class='form__label description description--label' for='patronymic'>
             Отчество
           </label>
-          <input class='form__input' type='text' id='patronymic' value='Викторович'>
+          <input class='form__input input' type='text' id='patronymic' value='Викторович'>
         </fieldset>
-        <fieldset class='form__group'>
-          <legend class='form__legend'>Контактная информация:</legend>
-          <label class='form__label form__label--primary'>
+        <fieldset class='form__group form__group--info'>
+          <legend class='form__title title title--primary'>Контактная информация:</legend>
+          <label class='form__label description description--label'>
             Контактный телефон<sup>*</sup>:
           </label>
-          <input class='form__input form__input--xs' type='tel' placeholder='Введите телефон'>
-          <label class='form__label form__label--primary'>
+          <input class='form__input input form__input--xs' type='tel' placeholder='Введите телефон'>
+          <label class='form__label description description--label'>
             Электронная почта<sup>*</sup>:
           </label>
           <input class='form__input input input--xs' type='email' placeholder='Введите e-mail'>
         </fieldset>
-        <fieldset class='form__group'>
-          <legend class='form__legend'>Ваше общее впечатление</legend>
-
-          <input class='form__radio' type='radio' id='impressionChoice1' name='impression' value='positive' checked>
-          <label class='form__label form__label--secondary' for='impressionChoice1'>Скорее
+        <fieldset class='form__group form__group--impression-point'>
+          <legend class='form__title title title--primary'>Ваше общее впечатление</legend>
+          <input class='form__radio input-radio' type='radio' id='impressionChoice1' name='impression' value='positive' checked>
+          <label class='form__label description description--label-bolt' for='impressionChoice1'>Скорее
             положительное</label>
-
-          <input class='form__radio' type='radio' id='impressionChoice2' name='impression' value='negative'>
-          <label class='form__label form__label--secondary' for='impressionChoice2'>Скорее
+          <input class='form__radio input-radio' type='radio' id='impressionChoice2' name='impression' value='negative'>
+          <label class='form__label description description--label-bolt' for='impressionChoice2'>Скорее
             отрицательное</label>
-
-          <input class='form__radio' type='radio' id='impressionChoice3' name='impression' value='noAnswer'>
-          <label class='form__label form__label--secondary' for='impressionChoice3'>Затрудняюсь
+          <input class='form__radio input-radio' type='radio' id='impressionChoice3' name='impression' value='noAnswer'>
+          <label class='form__label description description--label-bolt' for='impressionChoice3'>Затрудняюсь
             ответить</label>
         </fieldset>
-        <fieldset class='form__group'>
-          <legend class='form__legend'>
+        <fieldset class='form__group form__group--impression-point'>
+          <legend class='form__title title title--primary'>
             посещенные <br>
             достопримечательности:
           </legend>
           <input class='form__checkbox' type='checkbox' id='attractsСhoice1' checked>
-          <label class='form__label form__label--secondary'>Мост Дьявола</label>
-          <input class='form__checkbox' type='checkbox' id='attractsСhoice2'>
-          <label class='form__label form__label--secondary'>Гора-Колокол</label>
+          <label class='form__label  description description--label-bolt'>Мост Дьявола</label>
+          <input class='form__checkbox ' type='checkbox' id='attractsСhoice2'>
+          <label class='form__label description description--label-bolt'>Гора-Колокол</label>
           <input class='form__checkbox' type='checkbox' id='attractsСhoice3'>
-          <label class='form__label form__label--secondary'>Слайд-парк</label>
+          <label class='form__label description description--label-bolt'>Слайд-парк</label>
           <input class='form__checkbox' type='checkbox' id='attractsСhoice4'>
-          <label class='form__label form__label--secondary'>Красные скалы</label>
+          <label class='form__label description description--label-bolt'>Красные скалы</label>
         </fieldset>
-        <fieldset class='form__group'>
-          <legend class='form__legend'>Опишите свои эмоции:</legend>
+        <fieldset class='form__group form__group--emotion'>
+          <legend class='form__title title title--primary'>Опишите свои эмоции:</legend>
           <textarea class='form__textarea' name='field' cols='30' rows='10'
             placeholder="Опишите подробно все свои восторги " id='emotionField'></textarea>
         </fieldset>
@@ -121,9 +114,7 @@
     </section>
   </main>
   <footer class='main-footer'>
-    <a class='main-footer__hesh-tag' href="#">
       <p class='main-footer__text'>#visitsedona</p>
-    </a>
     <div class="social-icon">
       <a class='social-icon__vk' href='#'>
         <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
@@ -143,8 +134,8 @@
     </div>
   </footer>
   <div class='modal-failure'>
-    <b class='modal-failure__title'>Что-то пошло не так!</b>
-    <p class='modal-failure__text subtitle subtitle--primary'>
+    <b class='modal-failure__title title title--secondary'>Что-то пошло не так!</b>
+    <p class='modal-failure__text description description--primary'>
       Проверьте поля, выделенные<br>
       красным, скорее всего вы<br>
       забыли их заполнить
@@ -153,8 +144,8 @@
   </div>
 
   <div class='modal-success'>
-    <b class='modal-success__title title'>Ваш отзыв отправлен!</b>
-    <p class='modal-success__text subtitle subtitle--primary'>
+    <b class='modal-success__title title title--secondary'>Ваш отзыв отправлен!</b>
+    <p class='modal-success__text description description--primary'>
       Спасибо за ваше участие, ваш<br>
       отзыв уже поступил к нам.<br>
       В ближайшее время мы<br>

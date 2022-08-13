@@ -10,7 +10,20 @@
   color: $text-primary;
 }
 
+
 .description--secondary {
   color: $text-secondary;
   mix-blend-mode: normal;
+}
+
+.description--label {
+  color: $text-accent;
+
+  @include text-usially();
+}
+
+.description--label-bolt {
+  color: $text-primary;
+
+  @include text-bolt-s();
 }
