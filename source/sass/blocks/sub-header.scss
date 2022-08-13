@@ -2,10 +2,15 @@
   margin: 0;
 }
 
+.sub-header__wrapper {
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+
 .sub-header--primary {
-  background: var(--brand-color);
+  background: $brand-color;
 }
 
 .sub-header--secondary {
-  background: var(--bg-color-secondary);
+  background: $bg-color-secondary;
 }

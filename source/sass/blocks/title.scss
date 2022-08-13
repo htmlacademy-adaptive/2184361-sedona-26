@@ -8,10 +8,10 @@
 }
 
 .title--primary {
-  color: var(--text-primary);
+  color: $text-primary;
 }
 
 .title--secondary {
-  color: var(--text-secondary);
+  color: $text-secondary;
   mix-blend-mode: normal;
 }
