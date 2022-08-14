@@ -1,0 +1,23 @@
+.feedback {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feetback__header {
+  margin: 0%;
+}
+
+.feetback__title {
+  margin: 0 auto 24px;
+}
+
+.feetback__description {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 53px;
+}
+
+.feetback__form {
+  margin-bottom: 24px;
+}

@@ -1,0 +1,17 @@
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title--primary {
+  color: $text-primary;
+}
+
+.title--secondary {
+  color: $text-secondary;
+  mix-blend-mode: normal;
+}

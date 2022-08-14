@@ -1,0 +1,31 @@
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.description--primary {
+  color: $text-third;
+  text-align: center;
+}
+
+
+.description--secondary {
+  color: $text-secondary;
+  mix-blend-mode: normal;
+  text-align: center;
+}
+
+.description--label {
+  color: $text-third;
+  text-align: left;
+}
+
+.description--label-bolt {
+  color: $text-primary;
+  text-align: center;
+
+  @include text-bolt-s();
+}

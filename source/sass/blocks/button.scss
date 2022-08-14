@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  color: $text-secondary;
+}
+
+.button-primary {
+  width: 284px;
+  height: 58px;
+  background-color: $brand-color;
+}
+
+.button-secondary {
+  background-color: $brand-color;
+}
+
+.button--size-modal-fail {
+  width: 180px;
+  height: 58px;
+  padding: 18px 64px 14px 63px;
+}
+
+.button--size-modal-success {
+  width: 280px;
+  height: 58px;
+  padding: 18px 62px 14px 60px;
+}

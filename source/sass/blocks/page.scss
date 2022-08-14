@@ -1,0 +1,22 @@
+.page {
+  position: relative;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $text-primary;
+  background-color: $bg-color;
+
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

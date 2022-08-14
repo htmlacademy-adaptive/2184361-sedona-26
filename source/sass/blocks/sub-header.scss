@@ -1,0 +1,16 @@
+.sub-header {
+  margin: 0;
+}
+
+.sub-header__wrapper {
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+
+.sub-header--primary {
+  background: $brand-color;
+}
+
+.sub-header--secondary {
+  background: $bg-color-secondary;
+}

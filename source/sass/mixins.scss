@@ -1,0 +1,38 @@
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin text-bolt-m() {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin text-bolt-s() {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin text-bolt-xs() {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+// @mixin text-usially {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 21px;
+// }
