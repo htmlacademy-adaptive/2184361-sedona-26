@@ -1,7 +1,7 @@
 // Начните писать стили здесь
-@import "./golbal/fonts.scss";
-@import "./golbal/variableColor.scss";
-@import "./mixin.scss";
+@import "./global/fonts.scss";
+@import "./global/variableColor.scss";
+@import "./mixins.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
@@ -15,3 +15,6 @@
 @import "./blocks/search-hotel.scss";
 @import "./blocks/button.scss";
 @import "./blocks/main-footer.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/form.scss";
+@import "./blocks/gallery.scss";

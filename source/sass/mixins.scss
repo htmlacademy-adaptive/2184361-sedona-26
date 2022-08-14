@@ -23,9 +23,16 @@
   line-height: 26px;
 }
 
-@mixin text-usially {
+@mixin text-bolt-xs() {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
 }
+
+// @mixin text-usially {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 21px;
+// }

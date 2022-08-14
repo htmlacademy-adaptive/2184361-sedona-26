@@ -1,0 +1,38 @@
+.gallery {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__header {
+  margin-top: 33px;
+  margin-bottom: 45px;
+}
+
+.gallery__list {
+  min-width: 320px;
+}
+
+.gallery__item {
+  min-width: 320px;
+}
+// .gallery-item {
+// }
+// .gallery-item__image-photo {
+// }
+// .gallery-item__title {
+// }
+// .gallery-item__description-list {
+// }
+// .gallery-item__autor {
+// }
+// .gallery-item__name {
+// }
+// .gallery-item__icon {
+// }
+// .image-block__image-icon {
+// }
+// .gallery-item__likes {
+// }
