@@ -10,27 +10,27 @@
 <body class='page__body'>
   <header class='main-header'>
     <a class='main-header__logo'>
-      <img class='main-heder__logo-image' src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
+      <img src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
     </a>
-    <nav class='main-header__nav main-navigation'>
-      <button class='main-navigation--toggle' type='button'>
+    <nav class='main-header__nav main-navigation main-navigation--closed'>
+      <button class='main-navigation__toggle' type='button'>
         <span class='visual-hidden'>Открыть меню</span>
       </button>
-      <ul class='main-navigation__list visual-hidden'>
-        <li class='main-navigation__item main-navigation__item--index-site'>
-          <a class='main-navigation__link' href='#'>Главная</a>
-        </li>
-        <li class='main-navigation__item'>
-          <a class='main-navigation__link' href='#'>Фото и видео</a>
-        </li>
-        <li class='main-navigation__link' class='main-navigation__item'>
-          <a class='main-navigation__link' href='#'>Форма отзыва</a>
-        </li>
-        <li class='main-navigation__item'>
-          <a class='main-navigation__link' href='#'>HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class='main-navigation__list'>
+          <li class='main-navigation__item'>
+            <a class='main-navigation__link main-navigation__link--current' href='index.html'>Главная</a>
+          </li>
+          <li class='main-navigation__item main-navigation__item--margin'>
+            <a class='main-navigation__link' href='catalog.html'>Фото и видео</a>
+          </li>
+          <li class='main-navigation__item'>
+            <a class='main-navigation__link' href='form.html'>Форма отзыва</a>
+          </li>
+          <li class='main-navigation__item'>
+            <a class='main-navigation__link' href='#'>HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
   </header>
   <main class="main-container">
     <section class='page-image'>
@@ -182,5 +182,6 @@
       </a>
     </div>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 </html>

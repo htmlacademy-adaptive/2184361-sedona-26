@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: $text-primary;
+  // color: $text-primary;
   background-color: $bg-color;
 
   margin: 0;
@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
-body {
+.page__body {
   margin: 0;
 }
+
+// * {
+//   outline: 1px solid #000000;
+// }
