@@ -3,7 +3,7 @@
   padding: 90px 19px 85px 19px;
   background-size: cover;
   position: relative;
-  min-height: 389px;
+  height: 389px;
 
   &__text-image {
     position: absolute;
@@ -13,8 +13,20 @@
     display: block;
   }
 
-  @media (min-width: $tablet-width) {
-    min-height: 518px;
-    padding: 77px 154px 91.03px 153px;
+  // @media (min-width: $tablet-width) {
+  //   height: 518px;
+  //   padding: 77px 154px 91.03px 153px;
+  // }
+
+  .page-image--form {
+    background: url("../../img/back-desktop.jpg.png") center no-repeat;
+    height: 214px;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/back-form-tablet.png") center no-repeat;
+      height: 290px;
+      padding: 0;
+    }
   }
 }

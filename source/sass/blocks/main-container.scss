@@ -1,6 +1,5 @@
 .main-container {
   min-width: 320px;
-  // display: grid;
 }
 
 .main-container__promo {
@@ -14,4 +13,14 @@
 .main-container__search-hotel {
   align-self: center;
   justify-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    min-width: 768px;
+  }
+
+  .main-container__feedback {
+    width: 100%;
+  }
 }

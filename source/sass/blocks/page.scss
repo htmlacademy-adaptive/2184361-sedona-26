@@ -20,9 +20,31 @@
 }
 
 .page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
 }
 
+.page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// .page__main {
+//   flex-grow: 1;
+// }
+
+.page__feedback {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
 // * {
 //   outline: 1px solid #333333;
 // }

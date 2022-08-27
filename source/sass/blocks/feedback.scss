@@ -4,20 +4,27 @@
   flex-direction: column;
 }
 
-.feetback__header {
-  margin: 0%;
+.feedback__header {
+  margin-top: 36px;
 }
 
-.feetback__title {
+.feedback__title {
   margin: 0 auto 24px;
 }
 
-.feetback__description {
+.feedback__description {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto 53px;
 }
 
-.feetback__form {
+.feedback__form {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title,
+  .feedback__description {
+    width: 435px;
+  }
 }

@@ -1,0 +1,20 @@
+.page-image-form {
+  background: url("../../img/back-desktop.jpg.png") center no-repeat;
+  position: relative;
+  height: 214px;
+  background-size: cover;
+
+  &__text-image {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/back-form-tablet.png") center no-repeat;
+    height: 290px;
+    padding: 0;
+  }
+}
