@@ -1,5 +1,6 @@
 .main-container {
   min-width: 320px;
+  // display: grid;
 }
 
 .main-container__promo {
@@ -8,4 +9,9 @@
 
 .main-container__feedback {
   margin-bottom: 36px;
+}
+
+.main-container__search-hotel {
+  align-self: center;
+  justify-self: center;
 }

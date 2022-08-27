@@ -2,6 +2,7 @@
   position: relative;
   min-width: 320px;
   min-height: 56px;
+  display: block;
 }
 
 .main-header__logo {
@@ -18,16 +19,6 @@
   }
 }
 
-// .main-header__nav {
-//   min-width: 100%;
-
-//   @media (min-width: $tablet-width) {
-//     min-width: 90%;
-//     margin: 0 auto;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     min-width: 75%;
-//     margin: 0 auto;
-//   }
-// }
+.main-header__nav {
+  width: 100%;
+}

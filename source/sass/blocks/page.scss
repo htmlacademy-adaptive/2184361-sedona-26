@@ -4,8 +4,10 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  // color: $text-primary;
+  color: $text-primary;
   background-color: $bg-color;
+  height: 100%;
+  width: 100%;
 
   margin: 0;
   padding: 0;
@@ -22,5 +24,5 @@
 }
 
 // * {
-//   outline: 1px solid #000000;
+//   outline: 1px solid #333333;
 // }
