@@ -34,18 +34,14 @@
     display: grid;
     grid-template-columns: 30px 250px;
   }
-}
 
-.form__group--self {
-  margin: 0 0 64px;
-  position: relative;
-}
+  &--self {
+    margin: 0 0 64px;
+  }
 
-.form__group-info {
-  margin: 0 0 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &--info {
+    margin: 0 0 59px;
+  }
 }
 
 .form__group-impression-point {
@@ -109,6 +105,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 
   .form__title::before {
