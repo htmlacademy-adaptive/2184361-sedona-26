@@ -24,6 +24,7 @@
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  align-items: center;
 }
 
 .page__container {
@@ -31,10 +32,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
-// .page__main {
-//   flex-grow: 1;
-// }
 
 .page__feedback {
   display: flex;
@@ -44,7 +41,13 @@
     margin-left: 60px;
     margin-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
-// * {
-//   outline: 1px solid #333333;
-// }
+
+* {
+  outline: 1px solid #333333;
+}

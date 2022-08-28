@@ -2,6 +2,7 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .feedback__header {
@@ -26,5 +27,16 @@
   .feedback__title,
   .feedback__description {
     width: 435px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__form {
+    margin-bottom: 64px;
+  }
+
+  .feedback__title,
+  .feedback__description {
+    width: 434px;
   }
 }

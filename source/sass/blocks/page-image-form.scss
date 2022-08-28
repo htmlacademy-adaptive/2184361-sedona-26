@@ -17,4 +17,10 @@
     height: 290px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    background-size: 1200px;
+    height: 512px;
+    padding: 0;
+  }
 }
