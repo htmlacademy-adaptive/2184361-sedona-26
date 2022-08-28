@@ -62,7 +62,7 @@
 .form__input {
   position: relative;
   width: 280px;
-  min-height: 58px;
+  height: 58px;
   padding: 16px;
 }
 
@@ -148,6 +148,14 @@
   .form__group--self,
   .form__group--info {
     height: 338px;
+  }
+
+  .form__input {
+    width: 430px;
+  }
+
+  .form__input--xs {
+    width: 344px;
   }
 
   .form__textarea {
