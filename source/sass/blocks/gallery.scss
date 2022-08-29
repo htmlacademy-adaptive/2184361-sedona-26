@@ -13,13 +13,13 @@
 
 .gallery__list {
   min-width: 320px;
+  list-style-type: none;
 }
 
-.gallery__item {
-  min-width: 320px;
-}
-// .gallery-item {
+// .gallery__item {
+//   margin: 0;
 // }
+
 // .gallery-item__image-photo {
 // }
 // .gallery-item__title {
@@ -36,3 +36,10 @@
 // }
 // .gallery-item__likes {
 // }
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

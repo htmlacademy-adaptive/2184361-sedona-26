@@ -5,39 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
   <title>Sedona Gallery</title>
 </head>
 
 <body class='page__body'>
-  <header class='main-header'>
+  <header class='main-header page__header-wrapper'>
     <a class='main-header__logo'>
-      <img class='main-heder__logo-image' src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
+      <img src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
     </a>
-    <nav class='main-navigation'>
-      <button class='main-navigation--toggle' type='button'>
+    <nav class='main-header__nav main-navigation main-navigation--closed'>
+      <button class='main-navigation__toggle' type='button'>
         <span class='visual-hidden'>Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class='main-nav__list site-list'>
-          <li class='site-list__item site-list--index-site'>
-            <a href='index.html'>Главная</a>
-          </li>
-          <li class='site-list__item'>
-            <a href='#'>Фото и видео</a>
-          </li>
-          <li class='site-list__item'>
-            <a href='#'>Форма отзыва</a>
-          </li>
-          <li class='site-list__item'>
-            <a href='#'>HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class='main-navigation__list'>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link main-navigation__link--current' href='index.html'>Главная</a>
+        </li>
+        <li class='main-navigation__item main-navigation__item--margin'>
+          <a class='main-navigation__link' href='catalog.html'>Фото и видео</a>
+        </li>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link' href='form.html'>Форма отзыва</a>
+        </li>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link' href='#'>HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class='page-image'>
-      <h1 class='visually-hidden'>Каталог</h1>
+    <section class='page-image page-image--form'>
+      <h1 class='visual-hidden'>Каталог</h1>
       <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
     </section>
     <section class='gallery'>
@@ -52,7 +51,7 @@
         </p>
       </header>
       <ul class="gallery__list">
-        <li class='gallery__item gallery-item'>
+        <li class='gallery__item gallery-item gallery-item--large'>
           <img class='gallery-item__image-photo' src='./img/photo-1-mobile.jpg.png' alt='road to Sedona'>
           <h3 class='gallery-item__title title title--primary'>неродные просторы</h3>
           <dl class='gallery-item__description-list'>
@@ -90,7 +89,6 @@
         </li>
         <li class='gallery__item gallery-item'>
           <img class='gallery-item__image-photo' src='./img/photo-4-mobile.jpg.png' alt='bridge of davile'>
-
           <h3 class='gallery-item__title title title--primary'>мост дьявола</h3>
           <dl class='gallery-item__description-list'>
             <dt class='gallery-item__autor description description--primary'>Автор фото:</dt>

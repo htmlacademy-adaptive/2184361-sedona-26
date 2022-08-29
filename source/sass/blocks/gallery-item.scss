@@ -1,0 +1,13 @@
+.gallery-item {
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-item {
+    &--large {
+      grid-column: 1/ -1;
+      min-width: 648px;
+      height: 480px;
+    }
+  }
+}
