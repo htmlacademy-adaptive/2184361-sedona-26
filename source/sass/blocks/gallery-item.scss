@@ -11,3 +11,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gallery-item {
+    grid-column: 30%;
+
+    &--large {
+      grid-column: 1/ -1;
+      height: 400px;
+    }
+  }
+}
