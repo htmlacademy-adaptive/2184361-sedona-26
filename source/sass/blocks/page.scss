@@ -34,9 +34,6 @@
 }
 
 .page__feedback {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     margin-right: 60px;
