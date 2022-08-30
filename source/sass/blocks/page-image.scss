@@ -1,10 +1,39 @@
 .page-image {
-  background: url("../../img/back-mobile.jpg.png") no-repeat center;
-  text-align: center;
-  padding-top: 90px;
-  padding-bottom: 85px;
+  background: url("../../img/back-mobile.jpg.png") center no-repeat;
+  padding: 90px 19px 85px 19px;
+  background-size: cover;
+  position: relative;
+  height: 389px;
+
+  &__text-image {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    padding: 77px 154px 91.03px 153px;
+  }
+
+  .page-image--form {
+    background: url("../../img/back-desktop.jpg.png") center no-repeat;
+    height: 214px;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/back-form-tablet.png") center no-repeat;
+      height: 290px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/back-form-tablet.png") center no-repeat;
+      background-size: 1200px;
+      height: 512px;
+      padding: 0;
+    }
+  }
 }
-
-// .page-image__text-image {
-
-// }

@@ -1,5 +1,7 @@
 .search-hotel {
   margin: 0;
+  position: relative;
+  text-align: center;
 }
 
 .search-hotel__heading {
@@ -13,9 +15,28 @@
 }
 
 .search-hotel__button {
+  position: relative;
   margin-bottom: 49px;
+  left: calc(50% - 284px / 2);
 }
 
 .search-hotel__map {
   margin: 0;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .search-hotel__button {
+    left: calc(50% - 458px / 2);
+    margin-bottom: 58px;
+  }
+
+  .search-hotel__heading {
+    margin-top: 61px;
+    margin-bottom: 24px;
+  }
+
+  .search-hotel__description {
+    margin-bottom: 41px;
+  }
 }

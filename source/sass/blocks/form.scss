@@ -3,9 +3,12 @@
   min-width: 280px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__title {
+  display: block;
   margin: 0 auto 20px;
 
   &::before {
@@ -26,33 +29,41 @@
   border: none;
   padding: 0 20px 0;
   margin: 0 0 64px;
-}
 
-.form__group--self {
-  margin: 0 0 64px;
-}
+  &--impression-point {
+    display: grid;
+    grid-template-columns: 30px 250px;
+  }
 
-.form__group-info {
-  margin: 0 0 59px;
+  &--self {
+    margin: 0 0 64px;
+  }
+
+  &--info {
+    margin: 0 0 59px;
+  }
 }
 
 .form__group-impression-point {
   margin: 0 0 49px;
 }
 
-.form__group-emotion {
+.form__group--emotion {
   margin: 0 0 56px;
 }
-// .form__label {
-// }
+
+.form__label {
+  display: block;
+  text-align: start;
+}
 
 // .form__label--primary {
 // }
 
 .form__input {
   position: relative;
-  min-width: 280px;
-  min-height: 58px;
+  width: 280px;
+  height: 58px;
   padding: 16px;
 }
 
@@ -84,7 +95,80 @@
 
 .form__text {
   font-size: 12px;
-  color: $text-accent;
+  color: $text-third;
   text-transform: uppercase;
   text-align: right;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .form__title::before {
+    display: none;
+  }
+
+  .form__group--impression-point {
+    grid-column: 1/ -1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__group--emotion {
+    width: 100%;
+    grid-column: 1/ -1;
+  }
+
+  .form__textarea {
+    width: 100%;
+    height: 160px;
+    min-width: 648px;
+    margin: 0;
+  }
+
+  .form__button {
+    margin-left: 20px;
+    margin-bottom: 0;
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .form__group--self,
+  .form__group--info {
+    height: 338px;
+  }
+
+  .form__input {
+    width: 430px;
+  }
+
+  .form__input--xs {
+    width: 344px;
+  }
+
+  .form__textarea {
+    width: 768px;
+    height: 160px;
+    margin-left: 76px;
+    margin-right: 76px;
+  }
+
+  .form__button {
+    margin-left: 20px;
+    margin-bottom: 0;
+    width: 384px;
+  }
 }

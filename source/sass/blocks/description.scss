@@ -3,12 +3,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
 }
 
 .description--primary {
   color: $text-third;
   text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -16,11 +16,13 @@
   color: $text-secondary;
   mix-blend-mode: normal;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .description--label {
   color: $text-third;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .description--label-bolt {

@@ -6,6 +6,11 @@
   text-align: center;
   padding-top: 32px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47.5px;
+    padding-bottom: 56.5px;
+  }
 }
 
 .benefits__header-title {
@@ -31,11 +36,21 @@
 }
 
 .benefits__wrapper {
-  background: $bg-color-secondary;
+  background: $bg-color;
 }
 
-// .benefits__image {
-//   margin: 0;
+.benefits__list {
+  margin: 0;
+}
+
+.benefits__sub-list {
+  list-style-type: none;
+}
+
+// .benefits__item {
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
 // }
 
 // .benefits__icon {

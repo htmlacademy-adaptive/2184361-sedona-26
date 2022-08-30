@@ -2,22 +2,45 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.feetback__header {
-  margin: 0%;
+.feedback__header {
+  margin-top: 36px;
 }
 
-.feetback__title {
+.feedback__title {
   margin: 0 auto 24px;
 }
 
-.feetback__description {
+.feedback__description {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto 53px;
 }
 
-.feetback__form {
+.feedback__form {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    min-width: 768px;
+  }
+
+  .feedback__title,
+  .feedback__description {
+    width: 435px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__form {
+    margin-bottom: 64px;
+  }
+
+  .feedback__title,
+  .feedback__description {
+    width: 434px;
+  }
 }
