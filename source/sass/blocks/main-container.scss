@@ -24,3 +24,13 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-container {
+    max-width: 1200px;
+  }
+
+  .main-container__feedback {
+    max-width: 1200px;
+  }
+}
