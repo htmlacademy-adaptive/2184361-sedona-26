@@ -2,6 +2,7 @@
   margin: 0;
   padding-left: 0;
   list-style-type: none;
+  text-align: center;
 }
 
 .sub-header__wrapper {
@@ -11,4 +12,8 @@
 
 .sub-header--primary {
   background: $brand-color;
+}
+
+.sub-header__title {
+  text-align: center;
 }
