@@ -16,6 +16,12 @@
 .benefits__header-title {
   margin-top: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    .order-1 {
+      display: none;
+    }
+  }
 }
 
 .benefits__title {
@@ -28,6 +34,12 @@
 
 .benefits__description {
   margin: 0;
+
+  // @media (min-width: $tablet-width) {
+  //   br {
+  //     display: none;
+  //   }
+  // }
 }
 
 .benefits__description-number {

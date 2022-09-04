@@ -14,6 +14,7 @@
   margin-bottom: 32px;
 }
 
+
 .search-hotel__button {
   position: relative;
   margin-bottom: 49px;
@@ -23,6 +24,12 @@
 .search-hotel__map {
   margin: 0;
   width: 100%;
+}
+
+@media (max-width: $mobile-width-only) {
+  .search-hotel__description-br--no-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,5 +45,9 @@
 
   .search-hotel__description {
     margin-bottom: 41px;
+  }
+
+  .search-hotel__description-br--mobile {
+    display: none;
   }
 }
