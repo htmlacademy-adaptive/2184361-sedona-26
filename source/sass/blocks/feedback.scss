@@ -1,5 +1,4 @@
 .feedback {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +10,7 @@
 
 .feedback__title {
   margin: 0 auto 24px;
+  text-align: center;
 }
 
 .feedback__description {
@@ -20,7 +20,7 @@
 }
 
 .feedback__form {
-  margin-bottom: 24px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
