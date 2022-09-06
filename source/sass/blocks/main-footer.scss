@@ -27,6 +27,12 @@
     height: 120px;
     flex-direction: row;
     justify-content: space-around;
+
+    &--form {
+      justify-content: space-between;
+      width: 648px;
+      margin: 0 auto;
+    }
   }
 }
 

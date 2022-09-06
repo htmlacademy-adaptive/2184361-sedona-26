@@ -16,12 +16,11 @@
     display: block;
     content: "";
     position: absolute;
-    width: 100%;
     height: 1px;
     background: #e5e5e5;
     top: -24px;
-    left: 0;
-    right: 0;
+    left: -20px;
+    right: -20px;
     margin-bottom: 24px;
   }
 }
@@ -71,37 +70,35 @@
 
 .form__input {
   position: relative;
-  min-width: 280px;
+  // min-width: 280px;
   min-height: 58px;
   padding: 12px;
   border: 4px solid transparent;
 }
 
-.form__label--phone::after,
-.form__label--email::after {
-  position: absolute;
-  display: flex;
-  content: "";
-  justify-content: center;
-  align-items: center;
-  width: 58px;
-  height: 58px;
-  z-index: 1;
-  bottom: -58px;
-  right: 0;
-  margin: 0;
+.form__input-wrapper-phone,
+.form__input-wrapper-email {
+  display: inline;
+  width: 222px;
 }
 
-.form__label--phone::after {
+.form__input-wrapper-phone::after,
+.form__input-wrapper-email::after {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 58px;
+}
+
+.form__input-wrapper-phone::after {
   background: $bg-color-icon url("../../img/icon-phone.svg") no-repeat center;
 }
 
-.form__label--email::after {
+.form__input-wrapper-email::after {
   background: $bg-color-icon url("../../img/icon-email.svg") no-repeat center;
 }
 
-
-.form__input--xs {
+.input--xs {
   width: 222px;
 }
 
@@ -197,14 +194,62 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    width: 100%;
+    min-width: 648px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
 
+  .form__group {
+    margin-bottom: 48px;
+  }
+
+  .form__group--self::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 338px;
+    background: #e5e5e5;
+    top: -30px;
+    right: 0;
+  }
+
+  .form__wrapper-radio {
+    justify-self: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form__wrapper-checkbox {
+    justify-self: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 16px;
+  }
+
+  .form__title {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
   .form__title::before {
     display: none;
+  }
+
+  .form__label-radio-impression {
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form__label-impression {
+    min-width: 224px;
+    margin: 0;
   }
 
   .form__group--impression-point {
@@ -226,9 +271,12 @@
   }
 
   .form__button {
-    margin-left: 20px;
     margin-bottom: 0;
     width: 324px;
+  }
+
+  .form__text {
+    justify-self: end;
   }
 }
 
