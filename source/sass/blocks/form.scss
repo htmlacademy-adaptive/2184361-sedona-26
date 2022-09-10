@@ -204,6 +204,22 @@
     margin-bottom: 48px;
   }
 
+  .form__group--info {
+    position: relative;
+  }
+
+  .form__input-wrapper-phone {
+    position: absolute;
+    right: 60px;
+    top: 37px;
+  }
+
+  .form__input-wrapper-email {
+    position: absolute;
+    right: 60px;
+    top: 132px;
+  }
+
   .form__group--self::after {
     display: block;
     position: absolute;
@@ -235,10 +251,43 @@
   .form__title {
     text-align: center;
     margin-bottom: 28px;
+    position: relative;
+    width: 100%;
   }
 
   .form__title::before {
     display: none;
+  }
+
+  .form__title--decorate::before,
+  .form__title--decorate::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background: #dbdbdb;
+  }
+
+  .form__title--decorate::before {
+    left: 0;
+  }
+
+  .form__title--decorate::after {
+    right: 0;
+  }
+
+  .form__label--phone {
+    position: absolute;
+    top: 0;
+    left: 42px;
+  }
+
+  .form__label--email {
+    position: absolute;
+    top: 95px;
+    left: 42px;
   }
 
   .form__label-radio-impression {
