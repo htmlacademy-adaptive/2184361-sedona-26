@@ -1,19 +1,16 @@
 .gallery-item {
-  min-width: 320px;
-}
+  width: 280px;
+  position: relative;
 
-@media (min-width: $tablet-width) {
-  .gallery-item {
+  @media (min-width: $tablet-width) {
     &--large {
       grid-column: 1/ -1;
       min-width: 648px;
       height: 480px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .gallery-item {
+  @media (min-width: $desktop-width) {
     grid-column: 30%;
 
     &--large {
@@ -22,3 +19,59 @@
     }
   }
 }
+
+.gallery-item__image-photo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gallery-item__wrapper {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.gallery-item__description-list {
+  margin: 0;
+  height: 21px;
+  margin-bottom: 11px;
+}
+
+.gallery-item__title {
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.gallery-item__autor {
+  display: inline;
+  margin-bottom: 11px;
+}
+
+.gallery-item__name {
+  display: inline-block;
+  margin-left: 0;
+  margin-bottom: 11px;
+}
+
+.gallery-item__icon {
+  display: block;
+}
+
+// // .k__image-icon {
+// // }
+
+.gallery-item__likes {
+  display: inline;
+
+  @include text-bolt-xs();
+}
+
+.gallery-item__like-container {
+  margin: 0;
+  display: flex;
+}
+
+.gallery-item__button {
+  margin: 0;
+}
+

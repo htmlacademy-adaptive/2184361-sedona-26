@@ -1,11 +1,26 @@
 .page-image {
   background-image: url("../../img/back-mobile.jpg.png");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   padding: 90px 19px 85px 19px;
   background-size: cover;
   position: relative;
   height: 389px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    transform: translateX(50%);
+    content: "";
+    background-image: url("../../img/intro-triangle.svg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    right: 50%;
+    box-shadow: 0 2px 2px 0 $bg-color;
+  }
 
   &__text-image {
     position: absolute;
@@ -24,14 +39,12 @@
 .page-image--form {
   background-image: url("../../img/back-desktop.jpg.png");
   background-repeat: no-repeat;
-  background-position: 70% -40px;
   height: 214px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-form-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 70% -40px;
     height: 290px;
     padding: 0;
   }
@@ -40,7 +53,6 @@
     background-image: url("../../img/back-desktop.jpg\ \(1\).png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 70% -40px;
     width: 1200px;
     height: 512px;
     padding: 0;
