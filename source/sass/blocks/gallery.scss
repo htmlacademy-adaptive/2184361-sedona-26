@@ -1,10 +1,13 @@
 .gallery {
   width: 280px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .gallery__wrapper {
@@ -31,6 +34,30 @@
     bottom: -25px;
     left: -20px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    .gallery__header-no-mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+    margin-bottom: 67px;
+
+    &::after {
+      display: none;
+    }
+
+    .gallery__header-mobile-only {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    margin-bottom: 65px;
+  }
 }
 
 .gallery__list {
@@ -42,11 +69,13 @@
   gap: 50px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -62,31 +91,73 @@
     bottom: -25px;
     left: -20px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .gallery__video {
   text-align: center;
   margin-top: 43px;
-}
+  position: relative;
 
-@media (min-width: $tablet-width) {
-  .gallery {
-    width: 648px;
-  }
-
-  .gallery__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    margin-top: 62px;
+    margin-bottom: 40px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .gallery {
-    width: 1200px;
+.gallery__video-description {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
   }
 
-  .gallery__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.gallery__video-description-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.gallery__video-description-no-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.gallery__video-video {
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery__video-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: transparent url("../../img/play-video.svg") no-repeat center;
+  top: calc(70% - 56px / 2);
+  left: calc(50% - 44px / 2);
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: calc(70% - 60px / 2);
+    left: calc(50% - 60px / 2);
   }
 }

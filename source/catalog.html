@@ -36,17 +36,17 @@
   </header>
   <main class="main-container">
     <section class='page-image page-image--form'>
-      <h1 class='visual-hidden'>Каталог</h1>
+      <h1 class='visual-hidden'>Фото галерея</h1>
       <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
     </section>
     <section class='gallery gallery__wrapper'>
       <header class='gallery__header gallery__header-wrapper'>
-        <h2 class='gallery__header-title title title--primary'>
+        <h2 class='gallery__header-title title title--fourth'>
           Фото и видео
         </h2>
         <p class='gallery__header-description description description--primary'>
-          Не можете решиться на путешествие<br>
-          из-за курса? Фотографии помогут вам<br>
+          Не можете решиться на путешествие<br class="gallery__header-mobile-only">
+          из-за курса? <br class="gallery__header-no-mobile"> Фотографии помогут вам<br class="gallery__header-mobile-only">
           забыть о политике и экономике.
         </p>
       </header>
@@ -54,7 +54,7 @@
         <li class='gallery__item gallery-item gallery-item--large'>
           <img class='gallery-item__image-photo' src='./img/photo-1-mobile.jpg.png' alt="Просторы Седоны." width="280" height="280">
           <div class="gallery-item__wrapper">
-            <h3 class='gallery-item__title title title--third'>неродные просторы</h3>
+            <h3 class='gallery-item__title title title--third'>неродные <br class="gallery-item__title-only-tablet"> просторы</h3>
             <dl class='gallery-item__description-list'>
               <dt class='gallery-item__autor description'>Автор фото:</dt>
               <dd class='gallery-item__name'> Борис</dd>
@@ -134,22 +134,21 @@
     </section>
     <section class='gallery__video'>
       <header class='gallery__video-header header-page'>
-        <h2 class='gallery__video-header title title--primary'>
+        <h2 class='gallery__video-header title title--fourth'>
           Все еще сомневаетесь?
         </h2>
-        <p class='gallery__video-header description description--primary'>
-          Смотрите видеопрезентацию и<br>
-          скорее за билетами, пока они<br>
+        <p class='gallery__video-description description description--primary'>
+          Смотрите видеопрезентацию и<br class="gallery__video-description-mobile">
+          скорее за билетами, пока<br class="gallery__video-description-no-mobile"> они<br class="gallery__video-description-mobile">
           не подорожали в очередной раз!
         </p>
-        <img class='gallery__video-video' src='./img/video-mobile.jpg.png' alt="gallery video">
+        <img class='gallery__video-video' src='./img/video-mobile.jpg.png' alt="Видео о Седоне.">
+        <button class="gallery__video-button" type="button"></button>
       </header>
     </section>
   </main>
-  <footer class='main-footer'>
-    <a class='main-footer__hesh-tag' href="#">
-      <p class='main-footer__text'>#visitsedona</p>
-    </a>
+  <footer class='main-footer main-footer--form'>
+    <p class='main-footer__text'>#visitsedona</p>
     <div class="social-icon">
       <a class='social-icon__vk' href='#'>
         <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
@@ -161,12 +160,11 @@
         <img class='vk-icon' src='./img/social-utb.svg' alt='YouTube'>
       </a>
     </div>
-    <div class="developed">
+    <div class="main-footer__developed developed">
       <p>разработано</p>
       <a class='developed__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
         <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
       </a>
-    </div>
   </footer>
   <script src="./js/index.js"></script>
 </body>
