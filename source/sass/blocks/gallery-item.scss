@@ -37,11 +37,22 @@
     padding-top: 0;
     padding-left: 20px;
   }
+
+  @media (min-width: 1199px) {
+    background: none;
+  }
 }
 
 .gallery-item__wrapper--second {
-  background: $bg-color-card;
-  padding-left: 21px;
+  @media (min-width: $tablet-width) {
+    background: $bg-color-card;
+    padding-left: 21px;
+  }
+
+  @media (min-width: 1199px) {
+    background: none;
+    padding-left: 21px;
+  }
 }
 
 .gallery-item__title--small-card {
