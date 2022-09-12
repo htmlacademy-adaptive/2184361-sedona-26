@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class='page' lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Sedona Gallery</title>
+  <base href="https://htmlacademy-adaptive.github.io/2184361-sedona-26/16/">
+</head>
+
+<body class='page__body'>
+  <header class='main-header page__header-wrapper'>
+    <a class='main-header__logo'>
+      <img src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
+    </a>
+    <nav class='main-header__nav main-navigation main-navigation--closed main-navigation--nojs'>
+      <button class='main-navigation__toggle' type='button'>
+        <span class='visual-hidden'>Открыть меню</span>
+      </button>
+      <ul class='main-navigation__list'>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link' href='index.html'>Главная</a>
+        </li>
+        <li class='main-navigation__item main-navigation__item--margin'>
+          <a class='main-navigation__link main-navigation__link--current' href='catalog.html'>Фото и видео</a>
+        </li>
+        <li class='main-navigation__item main-navigation__item--large-grid'>
+          <a class='main-navigation__link' href='form.html'>Форма отзыва</a>
+        </li>
+        <li class='main-navigation__item'>
+          <a class='main-navigation__link' href='#'>HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class='page-image page-image--form'>
+      <h1 class='visual-hidden'>Фото галерея</h1>
+      <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
+    </section>
+    <section class='gallery gallery__wrapper'>
+      <header class='gallery__header gallery__header-wrapper'>
+        <h2 class='gallery__header-title title title--fourth'>
+          Фото и видео
+        </h2>
+        <p class='gallery__header-description description description--primary'>
+          Не можете решиться на путешествие<br class="gallery__header-mobile-only">
+          из-за курса? <br class="gallery__header-no-mobile"> Фотографии помогут вам<br class="gallery__header-mobile-only">
+          забыть о политике и экономике.
+        </p>
+      </header>
+      <ul class="gallery__list">
+        <li class='gallery__item gallery-item gallery-item--large'>
+          <a class="gallery-item__wrapper-image" href="#">
+          <img class='gallery-item__image-photo' src='./img/photo-1-mobile.jpg.png' alt="Просторы Седоны." width="280" height="280">
+          </a>
+          <div class="gallery-item__wrapper">
+            <h3 class='gallery-item__title title title--third'>неродные <br class="gallery-item__title-only-tablet"> просторы</h3>
+            <dl class='gallery-item__description-list'>
+              <dt class='gallery-item__autor description'>Автор фото:</dt>
+              <dd class='gallery-item__name'> Борис</dd>
+            </dl>
+            <div class="gallery-item__like-container">
+              <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
+                <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                </svg>
+              </a>
+              <span class="gallery-item__likes">1350</span>
+            </div>
+          </div>
+        </li>
+        <li class='gallery__item gallery-item'>
+          <a class="gallery-item__wrapper-image" href="#">
+          <img class='gallery-item__image-photo' src='./img/photo-2-mobile.jpg.png' alt='Флора Седоны.' width="280" height="280">
+          </a>
+          <div class="gallery-item__wrapper">
+            <h3 class='gallery-item__title gallery-item__title--small-card title title--third'>местная растительность</h3>
+            <dl class='gallery-item__description-list'>
+              <dt class='gallery-item__autor description'>Автор фото:</dt>
+              <dd class='gallery-item__name description'> Сергей</dd>
+            </dl>
+            <div class="gallery-item__like-container">
+              <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
+                <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                </svg>
+              </a>
+              <span class="gallery-item__likes">143</span>
+            </div>
+          </div>
+        </li>
+        <li class='gallery__item gallery-item'>
+          <a class="gallery-item__wrapper-image" href="#">
+          <img class='gallery-item__image-photo' src='./img/photo-3-mobile.jpg.png' alt='Дорога на север.' width="280" height="280">
+          </a>
+          <div class="gallery-item__wrapper gallery-item__wrapper--second">
+            <h3 class='gallery-item__title gallery-item__title--small-card title title--third'>дорога на север</h3>
+            <dl class='gallery-item__description-list'>
+              <dt class='gallery-item__autor description'>Автор фото:</dt>
+              <dd class='gallery-item__name description'> Петр</dd>
+            </dl>
+            <div class="gallery-item__like-container">
+              <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
+                <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                </svg>
+              </a>
+              <span class="gallery-item__likes">96</span>
+            </div>
+          </div>
+        </li>
+        <li class='gallery__item gallery-item'>
+          <a class="gallery-item__wrapper-image" href="#">
+          <img class='gallery-item__image-photo' src='./img/photo-4-mobile.jpg.png' alt='bridge of davile'>
+          </a>
+          <div class="gallery-item__wrapper">
+            <h3 class='gallery-item__title gallery-item__title--small-card title title--third'>мост дьявола</h3>
+            <dl class='gallery-item__description-list'>
+              <dt class='gallery-item__autor description'>Автор фото:</dt>
+              <dd class='gallery-item__name description'> Антон</dd>
+            </dl>
+            <div class="gallery-item__like-container">
+              <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
+                <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                </svg>
+              </a>
+              <span class="gallery-item__likes">254</span>
+            </div>
+          </div>
+        </li>
+        </div>
+      </ul>
+    </section>
+    <section class='gallery__video'>
+      <header class='gallery__video-header header-page'>
+        <h2 class='gallery__video-header title title--fourth'>
+          Все еще сомневаетесь?
+        </h2>
+        <p class='gallery__video-description description description--primary'>
+          Смотрите видеопрезентацию и<br class="gallery__video-description-mobile">
+          скорее за билетами, пока<br class="gallery__video-description-no-mobile"> они<br class="gallery__video-description-mobile">
+          не подорожали в очередной раз!
+        </p>
+        <img class='gallery__video-video' src='./img/video-mobile.jpg.png' alt="Видео о Седоне.">
+        <button class="gallery__video-button" type="button"></button>
+      </header>
+    </section>
+  </main>
+  <footer class='main-footer main-footer--form'>
+    <p class='main-footer__text'>#visitsedona</p>
+    <div class="social-icon">
+      <a class='social-icon__vk' href='#'>
+        <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
+      </a>
+      <a class='social-icon__tg' href='#'>
+        <img class='vk-icon' src='./img/social-tg.svg' alt='Telegram'>
+      </a>
+      <a class='social-icon__utb' href='#'>
+        <img class='vk-icon' src='./img/social-utb.svg' alt='YouTube'>
+      </a>
+    </div>
+    <div class="main-footer__developed developed">
+      <p>разработано</p>
+      <a class='developed__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
+        <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
+      </a>
+  </footer>
+</body>
+
+</html>
