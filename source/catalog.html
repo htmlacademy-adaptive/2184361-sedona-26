@@ -14,7 +14,7 @@
     <a class='main-header__logo'>
       <img src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
     </a>
-    <nav class='main-header__nav main-navigation main-navigation--closed'>
+    <nav class='main-header__nav main-navigation main-navigation--closed main-navigation--nojs'>
       <button class='main-navigation__toggle' type='button'>
         <span class='visual-hidden'>Открыть меню</span>
       </button>
@@ -52,7 +52,9 @@
       </header>
       <ul class="gallery__list">
         <li class='gallery__item gallery-item gallery-item--large'>
+          <a class="gallery-item__wrapper-image" href="#">
           <img class='gallery-item__image-photo' src='./img/photo-1-mobile.jpg.png' alt="Просторы Седоны." width="280" height="280">
+          </a>
           <div class="gallery-item__wrapper">
             <h3 class='gallery-item__title title title--third'>неродные <br class="gallery-item__title-only-tablet"> просторы</h3>
             <dl class='gallery-item__description-list'>
@@ -166,7 +168,6 @@
         <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
       </a>
   </footer>
-  <script src="./js/index.js"></script>
 </body>
 
 </html>

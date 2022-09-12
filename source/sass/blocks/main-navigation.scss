@@ -67,6 +67,19 @@
     display: block;
   }
 
+  &--nojs {
+    .main-navigation__toggle {
+      display: none;
+    }
+
+    .main-navigation__list {
+      display: block;
+      position: static;
+      z-index: 1;
+      margin-top: 40px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     @include text-bolt-xs;
     color: $main-font;
@@ -131,6 +144,25 @@
   justify-content: center;
   align-items: center;
   min-height: 55px;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    position: relative;
+    border-bottom: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 7px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     // // flex-basis: 25%;
