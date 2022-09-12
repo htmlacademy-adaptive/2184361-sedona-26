@@ -1,5 +1,4 @@
 .feedback {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +10,7 @@
 
 .feedback__title {
   margin: 0 auto 24px;
+  text-align: center;
 }
 
 .feedback__description {
@@ -20,17 +20,26 @@
 }
 
 .feedback__form {
-  margin-bottom: 24px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    min-width: 768px;
+    min-width: 648px;
   }
 
-  .feedback__title,
+  .feedback__title {
+    width: 435px;
+    margin-top: 20px;
+  }
+
   .feedback__description {
     width: 435px;
+    margin-bottom: 102px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -42,5 +51,11 @@
   .feedback__title,
   .feedback__description {
     width: 434px;
+  }
+
+  .feedback__description {
+    br {
+      display: none;
+    }
   }
 }

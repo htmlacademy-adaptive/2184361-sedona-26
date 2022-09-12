@@ -4,7 +4,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .title--primary {
@@ -13,5 +16,18 @@
 
 .title--secondary {
   color: $text-secondary;
-  mix-blend-mode: normal;
+}
+
+.title--third {
+  color: $text-primary;
+
+  @include text-bolt-xs();
+}
+
+.title--fourth {
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }

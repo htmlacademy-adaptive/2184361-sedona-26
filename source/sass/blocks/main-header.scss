@@ -1,17 +1,17 @@
 .main-header {
   position: relative;
   width: 100%;
-  height: 56px;
-  display: block;
+  min-width: 320px;
+  min-height: 56px;
+  display: flex;
 }
 
 .main-header__logo {
   position: absolute;
-  display: block;
   top: 0;
-  left: calc(50% - 185px / 2);
-  max-height: 96px;
-  order: 2;
+  right: 50%;
+  margin-bottom: 0;
+  transform: translateX(50%);
   z-index: 2;
 
   @media (min-width: $tablet-width) {
@@ -23,8 +23,14 @@
   width: 100%;
 }
 
-// @media (min-width: $tablet-width) {
-//   .main-header {
-//     width: 100%;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .main-header {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    max-width: 1200px;
+  }
+}

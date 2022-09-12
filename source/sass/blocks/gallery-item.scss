@@ -1,19 +1,16 @@
 .gallery-item {
-  min-width: 320px;
-}
+  width: 280px;
+  position: relative;
 
-@media (min-width: $tablet-width) {
-  .gallery-item {
+  @media (min-width: $tablet-width) {
     &--large {
       grid-column: 1/ -1;
       min-width: 648px;
       height: 480px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .gallery-item {
+  @media (min-width: $desktop-width) {
     grid-column: 30%;
 
     &--large {
@@ -21,4 +18,131 @@
       height: 400px;
     }
   }
+}
+
+.gallery-item__image-photo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.gallery-item__wrapper {
+  width: 100%;
+  margin: 0;
+  padding-top: 15px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    background: $bg-color-input;
+    padding-top: 0;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $text-secondary;
+  }
+}
+
+.gallery-item__wrapper--second {
+  @media (min-width: $tablet-width) {
+    background: $bg-color-card;
+    padding-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 21px;
+  }
+}
+
+.gallery-item__title {
+  margin-top: 0;
+  margin-bottom: 1px;
+
+  @media (min-width: $desktop-width) {
+    color: $text-secondary;
+    padding-top: 22px;
+  }
+}
+
+.gallery-item__title--small-card {
+  padding-top: 20px;
+}
+
+.gallery-item__description-list {
+  margin: 0;
+  height: 21px;
+  margin-bottom: 11px;
+}
+
+.gallery-item__title-only-tablet {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.gallery-item__autor {
+  display: inline;
+  margin-bottom: 11px;
+
+  @media (min-width: $desktop-width) {
+    color: $text-secondary;
+  }
+}
+
+.gallery-item__name {
+  display: inline-block;
+  margin-left: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: $desktop-width) {
+    color: $text-secondary;
+  }
+}
+
+.gallery-item__icon {
+  display: block;
+}
+
+// // .k__image-icon {
+// // }
+
+.gallery-item__likes {
+  display: inline;
+
+  @include text-bolt-xs();
+}
+
+.gallery-item__like-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    bottom: 27px;
+  }
+}
+
+.gallery-item__button {
+  margin: 0;
 }
