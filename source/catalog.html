@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Фото и видео</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
   <link href="./css/style.css" rel="stylesheet">
-  <title>Sedona Gallery</title>
 </head>
 
 <body class='page__body'>
@@ -53,9 +57,25 @@
       <ul class="gallery__list">
         <li class='gallery__item gallery-item gallery-item--large'>
           <a class="gallery-item__wrapper-image" href="#">
-          <img class='gallery-item__image-photo' src='./img/photo-1-mobile.jpg.png' alt="Просторы Седоны." width="280" height="280">
+          <picture>
+            <source
+              srcset="./img/catalog/gallery-photo-1-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-1-desktop@2x.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="./img/catalog/gallery-photo-1-tablet@1x.jpg 1x, ./img/catalog/gallery-photo-1-tablet@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="gallery-item__image-photo"
+              src="./img/catalog/gallery-photo-1-mobile@1x.jpg"
+              srcset="./img/catalog/gallery-photo-1-mobile@2x.jpg 2x"
+              alt="Дорога на закате неподалеку от города Sedona."
+              width="280" height="280"
+            />
+          </picture>
           </a>
-          <div class="gallery-item__wrapper">
+          <div class="gallery-item__wrapper gallery-item__wrapper--large">
             <h3 class='gallery-item__title title title--third'>неродные <br class="gallery-item__title-only-tablet"> просторы</h3>
             <dl class='gallery-item__description-list'>
               <dt class='gallery-item__autor description'>Автор фото:</dt>
@@ -73,10 +93,26 @@
         </li>
         <li class='gallery__item gallery-item'>
           <a class="gallery-item__wrapper-image" href="#">
-          <img class='gallery-item__image-photo' src='./img/photo-2-mobile.jpg.png' alt='Флора Седоны.' width="280" height="280">
+            <picture>
+              <source
+                srcset="./img/catalog/gallery-photo-2-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-2-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/catalog/gallery-photo-2-tablet@1x.jpg 1x, ./img/catalog/gallery-photo-2-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="gallery-item__image-photo"
+                src="./img/catalog/gallery-photo-2-mobile@1x.jpg"
+                srcset="./img/catalog/gallery-photo-2-mobile@2x.jpg 2x"
+                alt="Местная растительность."
+                width="280" height="280"
+              />
+            </picture>
           </a>
           <div class="gallery-item__wrapper">
-            <h3 class='gallery-item__title gallery-item__title--small-card title title--third'>местная растительность</h3>
+            <h3 class='gallery-item__title title title--third'>местная растительность</h3>
             <dl class='gallery-item__description-list'>
               <dt class='gallery-item__autor description'>Автор фото:</dt>
               <dd class='gallery-item__name description'> Сергей</dd>
@@ -93,10 +129,26 @@
         </li>
         <li class='gallery__item gallery-item'>
           <a class="gallery-item__wrapper-image" href="#">
-          <img class='gallery-item__image-photo' src='./img/photo-3-mobile.jpg.png' alt='Дорога на север.' width="280" height="280">
+            <picture>
+              <source
+                srcset="./img/catalog/gallery-photo-3-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-3-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/catalog/gallery-photo-3-tablet@1x.jpg 1x, ./img/catalog/gallery-photo-3-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="gallery-item__image-photo"
+                src="./img/catalog/gallery-photo-3-mobile@1x.jpg"
+                srcset="./img/catalog/gallery-photo-3-mobile@2x.jpg 2x"
+                alt="Дорога на север."
+                width="280" height="280"
+              />
+            </picture>
           </a>
           <div class="gallery-item__wrapper gallery-item__wrapper--second">
-            <h3 class='gallery-item__title gallery-item__title--small-card title title--third'>дорога на север</h3>
+            <h3 class='gallery-item__title title title--third'>дорога на север</h3>
             <dl class='gallery-item__description-list'>
               <dt class='gallery-item__autor description'>Автор фото:</dt>
               <dd class='gallery-item__name description'> Петр</dd>
@@ -113,10 +165,26 @@
         </li>
         <li class='gallery__item gallery-item'>
           <a class="gallery-item__wrapper-image" href="#">
-          <img class='gallery-item__image-photo' src='./img/photo-4-mobile.jpg.png' alt='bridge of davile'>
+            <picture>
+              <source
+                srcset="./img/catalog/gallery-photo-4-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-4-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/catalog/gallery-photo-4-tablet@1x.jpg 1x, ./img/catalog/gallery-photo-4-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="gallery-item__image-photo"
+                src="./img/catalog/gallery-photo-4-mobile@1x.jpg"
+                srcset="./img/catalog/gallery-photo-4-mobile@2x.jpg 2x"
+                alt="Мост дьявола"
+                width="280" height="280"
+              />
+            </picture>
           </a>
           <div class="gallery-item__wrapper">
-            <h3 class='gallery-item__title gallery-item__title--small-card title title--third'>мост дьявола</h3>
+            <h3 class='gallery-item__title title title--third'>мост дьявола</h3>
             <dl class='gallery-item__description-list'>
               <dt class='gallery-item__autor description'>Автор фото:</dt>
               <dd class='gallery-item__name description'> Антон</dd>
@@ -144,7 +212,7 @@
           скорее за билетами, пока<br class="gallery__video-description-no-mobile"> они<br class="gallery__video-description-mobile">
           не подорожали в очередной раз!
         </p>
-        <img class='gallery__video-video' src='./img/video-mobile.jpg.png' alt="Видео о Седоне.">
+        <img class='gallery__video-video' src='./img/video-mobile.jpg.png' alt="Видео о Седоне." width="280" height="177">
         <button class="gallery__video-button" type="button"></button>
       </header>
     </section>
@@ -168,6 +236,7 @@
         <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
       </a>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
