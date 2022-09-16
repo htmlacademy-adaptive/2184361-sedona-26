@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -57,7 +61,8 @@
           <div class="benefits-list__item-wrapper">
             <div class='sub-header sub-header--primary'>
               <div class="sub-header__wrapper">
-                <h2 class='benefits__title title title--secondary'>настоящий<br class="sub-header__wrapper-br"> городок</h2>
+                <h2 class='benefits__title title title--secondary'>настоящий<br class="sub-header__wrapper-br"> городок
+                </h2>
                 <p class='benefits__description-number description description--secondary'>— №1 —</p>
                 <p class='benefits__description description description--secondary'>
                   седона не аттракцион для туристов,<br>
@@ -65,8 +70,14 @@
                 </p>
               </div>
             </div>
-            <img class='benefits-list__image' src='./img/photo-city@1x-1.png' width="320" height="260"
-              alt='sedona street'>
+            <picture>
+              <source srcset="./img/index/photo-city-desktop@1x.jpg 1x, ./img/index/photo-city-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./img/index/photo-city-tablet@1x.jpg 1x, ./img/index/photo-city-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <img class='benefits-list__image' src="./img/index/photo-city-mobile@1x.jpg"
+                srcset="./img/index/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt='Улица Седоны'>
+            </picture>
           </div>
           <ul class='benefits-list__sub-list'>
             <li class='benefits-list__sub-list-item benefits-list__sub-list-item--house'>
@@ -98,7 +109,8 @@
           <div class='benefits-list__item-wrapper benefits-list__item-wrapper--inversion'>
             <div class='benefits-list__item-order sub-header sub-header--primary'>
               <div class="sub-header__wrapper">
-                <h2 class='benefits__title title title--secondary'>там есть<br class="sub-header__wrapper-br"> мост дьявола</h2>
+                <h2 class='benefits__title title title--secondary'>там есть<br class="sub-header__wrapper-br"> мост
+                  дьявола</h2>
                 <p class='benefits__description-number description description--secondary'>— №2 —</p>
                 <p class='benefits__description description description--secondary'>
                   Да, по нему можно пройти! Если вы<br>
@@ -106,14 +118,22 @@
                 </p>
               </div>
             </div>
-            <img class='benefits-list__image' src='./img/photo-bridge@1x-1.png' width="320" height="260"
-              alt='sedona street'>
-          </div>
+            <div class="benefits-list__image-wrapper">
+              <picture>
+                <source srcset="./img/index/photo-bridge-desktop@1x.jpg 1x, ./img/index/photo-bridge-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./img/index/photo-bridge-tablet@1x.jpg 1x, ./img/index/photo-bridge-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <img class='benefits-list__image' src="./img/index/photo-bridge-mobile@1x.jpg"
+                  srcset="./img/index/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt='Мост дьявола.'>
+              </picture>
+            </div>
         </li>
         <!-- 3 -->
         <li class='benefits-list__item-shot benefits-list__item-shot--secondary'>
           <div class="sub-header sub-header--secondary">
-            <h3 class='benefits__title sub-header__title title title--primary'>небольшая<br class="sub-header__br--no-mobile"> площадь</h3>
+            <h3 class='benefits__title sub-header__title title title--primary'>небольшая<br
+                class="sub-header__br--no-mobile"> площадь</h3>
             <p class='benefits__description-number description description description--primary'>— №3 —</p>
             <p class='benefits__description description description--primary'>
               Все интересные места<br class="sub-header__br--tablet"> находятся<br class="sub-header__br--mobile">
@@ -153,7 +173,8 @@
       </h2>
       <p class='search-hotel__description'>
         Укажите предполагаемые даты<br class="search-hotel__description-br--mobile">
-        поездки,<br class="search-hotel__description-br--no-mobile"> и мы покажем вам лучшие<br class="search-hotel__description-br--mobile">
+        поездки,<br class="search-hotel__description-br--no-mobile"> и мы покажем вам лучшие<br
+          class="search-hotel__description-br--mobile">
         предложения гостиниц в седоне
       </p>
       <button class='search-hotel__button button button--primary' type='button'>

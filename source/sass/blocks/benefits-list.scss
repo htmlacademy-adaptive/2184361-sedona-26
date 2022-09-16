@@ -190,11 +190,11 @@
     .benefits-list__item-order {
       order: 2;
     }
-
-    .benefits-list__image {
-      grid-column: 1 / 3;
-    }
   }
+}
+
+.benefits-list__image-wrapper {
+  grid-column: 1 / 3;
 }
 
 .benefits-list__image {
