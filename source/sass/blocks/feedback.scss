@@ -29,12 +29,11 @@
   }
 
   .feedback__header {
-    margin-top: -190px;
+    margin-top: 66px;
   }
 
   .feedback__title {
     width: 435px;
-    margin-top: 20px;
   }
 
   .feedback__description {
@@ -50,6 +49,10 @@
 @media (min-width: $desktop-width) {
   .feedback__form {
     margin-bottom: 64px;
+  }
+
+  .feedback__header {
+    margin-top: 109px;
   }
 
   .feedback__title,

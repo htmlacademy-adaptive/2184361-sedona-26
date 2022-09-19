@@ -43,7 +43,7 @@
   <main class="main-container">
     <section class='page-image page-image--form'>
       <h1 class='visual-hidden'>Фото галерея</h1>
-      <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona." width="229" height="39">
+      <img class='page-image__image' src="./img/SEDONA.svg" alt="promo sedona." width="229" height="39">
     </section>
     <section class='gallery gallery__wrapper'>
       <header class='gallery__header gallery__header-wrapper'>
@@ -220,21 +220,34 @@
   </main>
   <footer class='main-footer main-footer--form'>
     <p class='main-footer__text'>#visitsedona</p>
-    <div class="social-icon">
-      <a class='social-icon__vk' href='#'>
-        <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte.'>
+    <div class="main-footer__social social-icon">
+      <h3 class="visual-hidden">Связаться с нами в соцсетях.</h3>
+      <a class='social-icon__link' href="https://vk.com/htmlacademy">
+       <span class="visual-hidden">Ссылка на нашу страницу в Вконтакте.</span>
+        <svg class="social-icon__vk-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-vk.svg#icon-vk"></use>
+        </svg>
       </a>
-      <a class='social-icon__tg' href='#'>
-        <img class='vk-icon' src='./img/social-tg.svg' alt='Telegram.'>
+      <a class='social-icon__link' href="https://t.me/htmlacademy">
+        <span class="visual-hidden">Ссылка на наш канал в телеграмме.</span>
+        <svg class="social-icon__telegram-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-telegram.svg#icon-telegram"></use>
+        </svg>
       </a>
-      <a class='social-icon__utb' href='#'>
-        <img class='vk-icon' src='../img/social-utb.svg' alt='YouTube.'>
+      <a class='social-icon__link'  href="https://www.youtube.com/htmlacademyru">
+        <span class="visual-hidden">Ссылка на наш канал в ютубе.</span>
+        <svg class="social-icon__youtube-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-youtube.svg#icon-youtube"></use>
+        </svg>
       </a>
     </div>
     <div class="main-footer__developed developed">
       <p>разработано</p>
       <a class='developed__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
-        <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy.'>
+        <span class="visual-hidden">Ссылка на сайт htmlacademy.</span>
+        <svg class="developed__html-academy-icon" width="27" height="35" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-htmlacademy.svg#icon-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>

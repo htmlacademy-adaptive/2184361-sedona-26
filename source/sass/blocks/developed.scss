@@ -2,17 +2,26 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.developed__description {
-  display: block;
-  margin: 0;
+  &:hover {
+    color: $text-hover;
+
+    .developed__html-academy-icon {
+      fill: $text-hover;
+    }
+  }
+
+  &:active {
+    color: $text-down;
+
+    .developed__html-academy-icon {
+      fill: $text-down;
+    }
+  }
 }
 
 .developed__html-academy {
-  img {
-    display: block;
-    border: none;
+  .developed__html-academy-icon {
     margin-left: 13px;
   }
 }
