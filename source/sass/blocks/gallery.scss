@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -180px;
+    margin-top: 66px;
     margin-bottom: 67px;
 
     &::after {
@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -140px;
+    margin-top: 104px;
     margin-bottom: 65px;
   }
 }

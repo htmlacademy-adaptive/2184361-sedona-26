@@ -116,7 +116,7 @@
   }
 
   &--house::before {
-    background: url("../../img/icon-house.svg.svg") no-repeat center;
+    background: url("../../img/icons/icon-house.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
       width: 75px;
@@ -138,7 +138,7 @@
   }
 
   &--burger::before {
-    background: url("../../img/icon-burger.svg.svg") no-repeat center;
+    background: url("../../img/icons/icon-burger.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
       width: 76px;
@@ -160,7 +160,7 @@
   }
 
   &--gift::before {
-    background: url("../../img/icon-gift.svg.svg") no-repeat center;
+    background: url("../../img/icons/icon-gift.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
       width: 64px;

@@ -7,8 +7,36 @@
 }
 
 .social-icon__link {
-  img {
-    display: block;
-    border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: $bg-color;
+  background-color: $brand-color;
+
+  &:hover {
+    background-color: $brand-color-hover;
+  }
+
+  &:active {
+    color: $text-invert-active;
+    background-color: $brand-color-down;
+
+    .social-icon__vk-icon,
+    .social-icon__telegram-icon,
+    .social-icon__youtube-icon {
+      fill: $text-invert-active;
+    }
+  }
+
+  .social-icon__vk-icon,
+  .social-icon__telegram-icon,
+  .social-icon__youtube-icon {
+    fill: $bg-color;
+
+    &:active {
+      fill: $text-invert-active;
+    }
   }
 }

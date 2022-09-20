@@ -11,12 +11,17 @@
   <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class='page__body'>
   <header class='main-header page__header-wrapper'>
     <a class='main-header__logo'>
-      <img src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
+      <span class="visual-hidden">Логотип Седона.</span>
+      <svg width="185" height="96" aria-hidden="true" focusable="false">
+        <use href="./img/icons/sprite/icon-logo.svg#icon-logo"></use>
+      </svg>
     </a>
     <nav class='main-header__nav main-navigation main-navigation--closed main-navigation--nojs'>
       <button class='main-navigation__toggle' type='button'>
@@ -41,7 +46,7 @@
   <main class="main-container">
     <section class='main-container__feedback page-image page-image--form'>
       <h1 class='visual-hidden'>Форма для отзыва</h1>
-      <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
+      <img class='page-image__image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
     </section>
     <section class='feedback page__feedback'>
       <header class='feedback__header'>
@@ -112,26 +117,26 @@
             достопримечательности:
           </legend>
           <div class="form__wrapper-checkbox">
-            <label class='form__label-impression form__label-impression--checkbox'>
+            <label class='form__label-impression form__label-impression--checkbox' for="attractsСhoice1">
               <input class='form__checkbox checkbox' type='checkbox' id='attractsСhoice1' checked>
               <span class="form__radio-fake form__radio-fake--checkbox"></span>
               <span
                 class="description description--label-bolt">Мост
                 Дьявола</span>
             </label>
-            <label class='form__label-impression form__label-impression--checkbox'>
+            <label class='form__label-impression form__label-impression--checkbox' for="attractsСhoice2">
               <input class='form__checkbox checkbox' type='checkbox' id='attractsСhoice2'>
               <span class="form__radio-fake form__radio-fake--checkbox"></span>
               <span
                 class="description description--label-bolt">Гора-Колокол</span>
             </label>
-            <label class='form__label-impression form__label-impression--checkbox'>
+            <label class='form__label-impression form__label-impression--checkbox' for="attractsСhoice3">
               <input class='form__checkbox checkbox' type='checkbox' id='attractsСhoice3'>
               <span class="form__radio-fake form__radio-fake--checkbox"></span>
               <span
                 class="description description--label-bolt">Слайд-парк</span>
             </label>
-            <label class='form__label-impression form__label-impression--checkbox'>
+            <label class='form__label-impression form__label-impression--checkbox' for="attractsСhoice4">
               <input class='form__checkbox checkbox' type='checkbox' id='attractsСhoice4'>
               <span class="form__radio-fake form__radio-fake--checkbox"></span>
               <span
@@ -152,22 +157,36 @@
   </main>
   <footer class='main-footer main-footer--form'>
     <p class='main-footer__text'>#visitsedona</p>
-    <div class="social-icon">
-      <a class='social-icon__vk' href='#'>
-        <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
+    <div class="main-footer__social social-icon">
+      <h3 class="visual-hidden">Связаться с нами в соцсетях.</h3>
+      <a class='social-icon__link' href="https://vk.com/htmlacademy">
+       <span class="visual-hidden">Ссылка на нашу страницу в Вконтакте.</span>
+        <svg class="social-icon__vk-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-vk.svg#icon-vk"></use>
+        </svg>
       </a>
-      <a class='social-icon__tg' href='#'>
-        <img class='vk-icon' src='./img/social-tg.svg' alt='Telegram'>
+      <a class='social-icon__link' href="https://t.me/htmlacademy">
+        <span class="visual-hidden">Ссылка на наш канал в телеграмме.</span>
+        <svg class="social-icon__telegram-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-telegram.svg#icon-telegram"></use>
+        </svg>
       </a>
-      <a class='social-icon__utb' href='#'>
-        <img class='vk-icon' src='./img/social-utb.svg' alt='YouTube'>
+      <a class='social-icon__link'  href="https://www.youtube.com/htmlacademyru">
+        <span class="visual-hidden">Ссылка на наш канал в ютубе.</span>
+        <svg class="social-icon__youtube-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-youtube.svg#icon-youtube"></use>
+        </svg>
       </a>
     </div>
     <div class="main-footer__developed developed">
       <p>разработано</p>
       <a class='developed__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
-        <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
+        <span class="visual-hidden">Ссылка на сайт htmlacademy.</span>
+        <svg class="developed__html-academy-icon" width="27" height="35" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-htmlacademy.svg#icon-htmlacademy"></use>
+        </svg>
       </a>
+    </div>
   </footer>
   <div class='modal-failure visual-hidden'>
     <b class='modal-failure__title title title--secondary'>Что-то пошло не так!</b>

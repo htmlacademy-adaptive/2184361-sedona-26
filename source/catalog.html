@@ -11,12 +11,17 @@
   <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class='page__body'>
   <header class='main-header page__header-wrapper'>
     <a class='main-header__logo'>
-      <img src='./img/logo.svg' width="185" height="96" alt='логотип седона'>
+      <span class="visual-hidden">Логотип Седона.</span>
+      <svg width="185" height="96" aria-hidden="true" focusable="false">
+        <use href="./img/icons/sprite/icon-logo.svg#icon-logo"></use>
+      </svg>
     </a>
     <nav class='main-header__nav main-navigation main-navigation--closed main-navigation--nojs'>
       <button class='main-navigation__toggle' type='button'>
@@ -41,7 +46,7 @@
   <main class="main-container">
     <section class='page-image page-image--form'>
       <h1 class='visual-hidden'>Фото галерея</h1>
-      <img class='page-image__text-image' src="./img/SEDONA.svg" alt="promo sedona" width="229" height="39">
+      <img class='page-image__image' src="./img/SEDONA.svg" alt="promo sedona." width="229" height="39">
     </section>
     <section class='gallery gallery__wrapper'>
       <header class='gallery__header gallery__header-wrapper'>
@@ -58,6 +63,9 @@
         <li class='gallery__item gallery-item gallery-item--large'>
           <a class="gallery-item__wrapper-image" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-1-desktop@1x.webp 1x, ./img/catalog/gallery-photo-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/gallery-photo-1-tablet@1x.webp 1x, ./img/catalog/gallery-photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/catalog/gallery-photo-1-mobile@1x.webp 1x, ./img/catalog/gallery-photo-1-mobile@2x.webp 2x">
             <source
               srcset="./img/catalog/gallery-photo-1-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-1-desktop@2x.jpg 2x"
               media="(min-width: 1200px)"
@@ -84,7 +92,7 @@
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">1350</span>
@@ -94,6 +102,9 @@
         <li class='gallery__item gallery-item'>
           <a class="gallery-item__wrapper-image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-2-desktop@1x.webp 1x, ./img/catalog/gallery-photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/gallery-photo-2-tablet@1x.webp 1x, ./img/catalog/gallery-photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog/gallery-photo-2-mobile@1x.webp 1x, ./img/catalog/gallery-photo-2-mobile@2x.webp 2x">
               <source
                 srcset="./img/catalog/gallery-photo-2-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-2-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)"
@@ -120,7 +131,7 @@
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">143</span>
@@ -130,6 +141,9 @@
         <li class='gallery__item gallery-item'>
           <a class="gallery-item__wrapper-image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-3-desktop@1x.webp 1x, ./img/catalog/gallery-photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/gallery-photo-3-tablet@1x.webp 1x, ./img/catalog/gallery-photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog/gallery-photo-3-mobile@1x.webp 1x, ./img/catalog/gallery-photo-3-mobile@2x.webp 2x">
               <source
                 srcset="./img/catalog/gallery-photo-3-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-3-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)"
@@ -156,7 +170,7 @@
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">96</span>
@@ -166,6 +180,9 @@
         <li class='gallery__item gallery-item'>
           <a class="gallery-item__wrapper-image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-4-desktop@1x.webp 1x, ./img/catalog/gallery-photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/gallery-photo-4-tablet@1x.webp 1x, ./img/catalog/gallery-photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog/gallery-photo-4-mobile@1x.webp 1x, ./img/catalog/gallery-photo-4-mobile@2x.webp 2x">
               <source
                 srcset="./img/catalog/gallery-photo-4-desktop@1x.jpg 1x, ./img/catalog/gallery-photo-4-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)"
@@ -192,14 +209,13 @@
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#icon-like"></use>
+                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">254</span>
             </div>
           </div>
         </li>
-        </div>
       </ul>
     </section>
     <section class='gallery__video'>
@@ -219,22 +235,36 @@
   </main>
   <footer class='main-footer main-footer--form'>
     <p class='main-footer__text'>#visitsedona</p>
-    <div class="social-icon">
-      <a class='social-icon__vk' href='#'>
-        <img class='vk-icon' src='./img/social-vk.svg' alt='Vkontakte'>
+    <div class="main-footer__social social-icon">
+      <h3 class="visual-hidden">Связаться с нами в соцсетях.</h3>
+      <a class='social-icon__link' href="https://vk.com/htmlacademy">
+       <span class="visual-hidden">Ссылка на нашу страницу в Вконтакте.</span>
+        <svg class="social-icon__vk-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-vk.svg#icon-vk"></use>
+        </svg>
       </a>
-      <a class='social-icon__tg' href='#'>
-        <img class='vk-icon' src='./img/social-tg.svg' alt='Telegram'>
+      <a class='social-icon__link' href="https://t.me/htmlacademy">
+        <span class="visual-hidden">Ссылка на наш канал в телеграмме.</span>
+        <svg class="social-icon__telegram-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-telegram.svg#icon-telegram"></use>
+        </svg>
       </a>
-      <a class='social-icon__utb' href='#'>
-        <img class='vk-icon' src='./img/social-utb.svg' alt='YouTube'>
+      <a class='social-icon__link'  href="https://www.youtube.com/htmlacademyru">
+        <span class="visual-hidden">Ссылка на наш канал в ютубе.</span>
+        <svg class="social-icon__youtube-icon" width="24" height="24" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-youtube.svg#icon-youtube"></use>
+        </svg>
       </a>
     </div>
     <div class="main-footer__developed developed">
       <p>разработано</p>
       <a class='developed__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
-        <img class='html-academy' src='./img/htmlacademy.svg.svg' alt='htmlacademy'>
+        <span class="visual-hidden">Ссылка на сайт htmlacademy.</span>
+        <svg class="developed__html-academy-icon" width="27" height="35" aria-hidden="true" focusable="false">
+          <use href="./img/icons/sprite/icon-htmlacademy.svg#icon-htmlacademy"></use>
+        </svg>
       </a>
+    </div>
   </footer>
   <script src="./js/index.js"></script>
 </body>
