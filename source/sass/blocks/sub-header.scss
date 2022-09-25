@@ -2,6 +2,7 @@
   padding-top: 33px;
   padding-bottom: 40px;
   text-align: center;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
     .sub-header__wrapper-br {
@@ -10,7 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 39px;
     padding-bottom: 43px;
 
     .sub-header__wrapper {
@@ -38,44 +39,44 @@
   background: $brand-color;
 }
 
-.sub-header__br {
-  @media (max-width: $mobile-width-only) {
-    &--no-mobile {
-      display: none;
-    }
+// .sub-header__br {
+//   @media (max-width: $mobile-width-only) {
+//     &--no-mobile {
+//       display: none;
+//     }
 
-    &--tablet {
-      display: none;
-    }
+//     &--tablet {
+//       display: none;
+//     }
 
-    &--desktop {
-      display: none;
-    }
-  }
+//     &--desktop {
+//       display: none;
+//     }
+//   }
 
-  @media (min-width: $tablet-width) {
-    &--mobile {
-      display: none;
-    }
+//   @media (min-width: $tablet-width) {
+//     &--mobile {
+//       display: none;
+//     }
 
-    &--desktop-only {
-      display: none;
-    }
-  }
+//     &--desktop {
+//       display: none;
+//     }
+//   }
 
-  @media (max-width: 767px) {
-    &--desktop-only {
-      display: none;
-    }
-  }
+//   @media (max-width: 767px) {
+//     &--desktop {
+//       display: none;
+//     }
+//   }
 
-  @media (min-width: $desktop-width) {
-    &--mobile {
-      display: none;
-    }
+//   @media (min-width: $desktop-width) {
+//     &--mobile {
+//       display: none;
+//     }
 
-    &--tablet {
-      display: none;
-    }
-  }
-}
+//     &--tablet {
+//       display: none;
+//     }
+//   }
+// }

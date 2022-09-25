@@ -4,6 +4,10 @@
   align-items: center;
   gap: 6px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 4px;
+  }
 }
 
 .social-icon__link {
