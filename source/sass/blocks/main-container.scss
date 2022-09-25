@@ -15,6 +15,10 @@
   justify-self: center;
 }
 
+.main-container__gallery-wrapper {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .main-container {
     min-width: 768px;
@@ -22,6 +26,15 @@
 
   .main-container__feedback {
     width: 100%;
+  }
+}
+
+.main-container__gallery-video-wrapper {
+  margin-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 62px;
+    margin-bottom: 40px;
   }
 }
 
