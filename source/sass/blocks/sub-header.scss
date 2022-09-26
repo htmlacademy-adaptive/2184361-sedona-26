@@ -1,7 +1,45 @@
 .sub-header {
-  padding-top: 33px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 34px;
   text-align: center;
+  position: relative;
+
+  &--first {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-right: 6px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
+  }
+
+  &--thrid {
+    padding-top: 25px;
+    padding-bottom: 21px;
+  }
+
+  &--fourth {
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    span {
+      margin-left: 3px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 1px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 3px;
+      }
+    }
+  }
+
+  &--fith {
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
 
   @media (max-width: $mobile-width-only) {
     .sub-header__wrapper-br {
@@ -10,7 +48,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 39px;
     padding-bottom: 43px;
 
     .sub-header__wrapper {
@@ -22,8 +60,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
+    padding-top: 39px;
     padding-bottom: 56px;
+
+    &--first {
+      padding-top: 46px;
+    }
 
     .sub-header__wrapper {
       text-align: center;
@@ -58,13 +100,13 @@
       display: none;
     }
 
-    &--desktop-only {
+    &--desktop {
       display: none;
     }
   }
 
   @media (max-width: 767px) {
-    &--desktop-only {
+    &--desktop {
       display: none;
     }
   }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class='page' lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,56 +11,56 @@
   <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preload" href="./fonts/ptsans.woff2" typge="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class='page__body'>
-  <header class='main-header page__header-wrapper'>
-    <a class='main-header__logo'>
+<body class="page__body">
+  <header class="main-header page__header-wrapper">
+    <a class="main-header__logo" href="index.html">
       <span class="visual-hidden">Логотип Седона.</span>
       <svg width="185" height="96" aria-hidden="true" focusable="false">
-        <use href="./img/icons/sprite/icon-logo.svg#icon-logo"></use>
+        <use href="./img/sprite.svg#icon-logo"></use>
       </svg>
     </a>
-    <nav class='main-header__nav main-navigation main-navigation--closed main-navigation--nojs'>
-      <button class='main-navigation__toggle' type='button'>
-        <span class='visual-hidden'>Открыть меню</span>
+    <nav class="main-header__nav main-navigation main-navigation--closed main-navigation--nojs">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visual-hidden">Открыть меню</span>
       </button>
-      <ul class='main-navigation__list'>
-        <li class='main-navigation__item'>
-          <a class='main-navigation__link' href='index.html'>Главная</a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
-        <li class='main-navigation__item main-navigation__item--margin'>
-          <a class='main-navigation__link main-navigation__link--current' href='catalog.html'>Фото и видео</a>
+        <li class="main-navigation__item main-navigation__item--margin">
+          <a class="main-navigation__link main-navigation__link--current" href="catalog.html">Фото и видео</a>
         </li>
-        <li class='main-navigation__item main-navigation__item--large-grid'>
-          <a class='main-navigation__link' href='form.html'>Форма отзыва</a>
+        <li class="main-navigation__item main-navigation__item--large-grid">
+          <a class="main-navigation__link" href="form.html">Форма отзыва</a>
         </li>
-        <li class='main-navigation__item'>
-          <a class='main-navigation__link' href='#'>HTML Academy</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class='page-image page-image--form'>
-      <h1 class='visual-hidden'>Фото галерея</h1>
-      <img class='page-image__image' src="./img/SEDONA.svg" alt="promo sedona." width="229" height="39">
+    <section class="page-image page-image--form">
+      <h1 class="visual-hidden">Фото галерея</h1>
+      <img class="page-image__image" src="./img/icons/sedona.svg" alt="Промо Sedona." width="229" height="39">
     </section>
-    <section class='gallery gallery__wrapper'>
-      <header class='gallery__header gallery__header-wrapper'>
-        <h2 class='gallery__header-title title title--fourth'>
+    <section class="main-container__gallery-wrapper gallery">
+      <header class="gallery__header gallery__header-wrapper">
+        <h2 class="gallery__header-title title title--fourth">
           Фото и видео
         </h2>
-        <p class='gallery__header-description description description--primary'>
+        <p class="gallery__header-description description description--primary">
           Не можете решиться на путешествие<br class="gallery__header-mobile-only">
           из-за курса? <br class="gallery__header-no-mobile"> Фотографии помогут вам<br class="gallery__header-mobile-only">
           забыть о политике и экономике.
         </p>
       </header>
       <ul class="gallery__list">
-        <li class='gallery__item gallery-item gallery-item--large'>
+        <li class="gallery__item gallery-item gallery-item--large">
           <a class="gallery-item__wrapper-image" href="#">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-1-desktop@1x.webp 1x, ./img/catalog/gallery-photo-1-desktop@2x.webp 2x">
@@ -84,22 +84,22 @@
           </picture>
           </a>
           <div class="gallery-item__wrapper gallery-item__wrapper--large">
-            <h3 class='gallery-item__title title title--third'>неродные <br class="gallery-item__title-only-tablet"> просторы</h3>
-            <dl class='gallery-item__description-list'>
-              <dt class='gallery-item__autor description'>Автор фото:</dt>
-              <dd class='gallery-item__name'> Борис</dd>
+            <h3 class="gallery-item__title title title--third">неродные <br class="gallery-item__title-only-tablet"> просторы</h3>
+            <dl class="gallery-item__description-list">
+              <dt class="gallery-item__autor description">Автор фото:</dt>
+              <dd class="gallery-item__name"> Борис</dd>
             </dl>
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
+                  <use href="./img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">1350</span>
             </div>
           </div>
         </li>
-        <li class='gallery__item gallery-item'>
+        <li class="gallery__item gallery-item">
           <a class="gallery-item__wrapper-image" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-2-desktop@1x.webp 1x, ./img/catalog/gallery-photo-2-desktop@2x.webp 2x">
@@ -123,22 +123,22 @@
             </picture>
           </a>
           <div class="gallery-item__wrapper">
-            <h3 class='gallery-item__title title title--third'>местная растительность</h3>
-            <dl class='gallery-item__description-list'>
-              <dt class='gallery-item__autor description'>Автор фото:</dt>
-              <dd class='gallery-item__name description'> Сергей</dd>
+            <h3 class="gallery-item__title title title--third">местная растительность</h3>
+            <dl class="gallery-item__description-list">
+              <dt class="gallery-item__autor description">Автор фото:</dt>
+              <dd class="gallery-item__name description"> Сергей</dd>
             </dl>
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
+                  <use href="./img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">143</span>
             </div>
           </div>
         </li>
-        <li class='gallery__item gallery-item'>
+        <li class="gallery__item gallery-item">
           <a class="gallery-item__wrapper-image" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-3-desktop@1x.webp 1x, ./img/catalog/gallery-photo-3-desktop@2x.webp 2x">
@@ -162,22 +162,22 @@
             </picture>
           </a>
           <div class="gallery-item__wrapper gallery-item__wrapper--second">
-            <h3 class='gallery-item__title title title--third'>дорога на север</h3>
-            <dl class='gallery-item__description-list'>
-              <dt class='gallery-item__autor description'>Автор фото:</dt>
-              <dd class='gallery-item__name description'> Петр</dd>
+            <h3 class="gallery-item__title title title--third">дорога на север</h3>
+            <dl class="gallery-item__description-list">
+              <dt class="gallery-item__autor description">Автор фото:</dt>
+              <dd class="gallery-item__name description"> Петр</dd>
             </dl>
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
+                  <use href="./img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">96</span>
             </div>
           </div>
         </li>
-        <li class='gallery__item gallery-item'>
+        <li class="gallery__item gallery-item">
           <a class="gallery-item__wrapper-image" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/gallery-photo-4-desktop@1x.webp 1x, ./img/catalog/gallery-photo-4-desktop@2x.webp 2x">
@@ -201,15 +201,15 @@
             </picture>
           </a>
           <div class="gallery-item__wrapper">
-            <h3 class='gallery-item__title title title--third'>мост дьявола</h3>
-            <dl class='gallery-item__description-list'>
-              <dt class='gallery-item__autor description'>Автор фото:</dt>
-              <dd class='gallery-item__name description'> Антон</dd>
+            <h3 class="gallery-item__title title title--third">мост дьявола</h3>
+            <dl class="gallery-item__description-list">
+              <dt class="gallery-item__autor description">Автор фото:</dt>
+              <dd class="gallery-item__name description"> Антон</dd>
             </dl>
             <div class="gallery-item__like-container">
               <a class="gallery-item__button" href="#" aria-label="Мне нравится.">
                 <svg class="gallery-item__icon" width="23" height="21" aria-hidden="true" focusable="false">
-                  <use href="./img/icons/sprite/icon-like.svg#icon-like"></use>
+                  <use href="./img/sprite.svg#icon-like"></use>
                 </svg>
               </a>
               <span class="gallery-item__likes">254</span>
@@ -218,50 +218,50 @@
         </li>
       </ul>
     </section>
-    <section class='gallery__video'>
-      <header class='gallery__video-header header-page'>
-        <h2 class='gallery__video-header title title--fourth'>
+    <section class="main-container__gallery-video-wrapper gallery-video">
+      <header class="gallery-video__header header-page">
+        <h2 class="gallery-video__header title title--fourth">
           Все еще сомневаетесь?
         </h2>
-        <p class='gallery__video-description description description--primary'>
-          Смотрите видеопрезентацию и<br class="gallery__video-description-mobile">
-          скорее за билетами, пока<br class="gallery__video-description-no-mobile"> они<br class="gallery__video-description-mobile">
+        <p class="gallery-video__description description description--primary">
+          Смотрите видеопрезентацию и<br class="gallery-video__description-mobile">
+          скорее за билетами, пока<br class="gallery-video__description-no-mobile"> они<br class="gallery-video__description-mobile">
           не подорожали в очередной раз!
         </p>
-        <img class='gallery__video-video' src='./img/video-mobile.jpg.png' alt="Видео о Седоне." width="280" height="177">
-        <button class="gallery__video-button" type="button"></button>
+        <img class="gallery-video__video" src="./img/video-mobile.jpg.png" alt="Видео о Седоне." width="280" height="177">
+        <button class="gallery-video__button" type="button"></button>
       </header>
     </section>
   </main>
-  <footer class='main-footer main-footer--form'>
-    <p class='main-footer__text'>#visitsedona</p>
+  <footer class="main-footer main-footer--form">
+    <p class="main-footer__text">#visitsedona</p>
     <div class="main-footer__social social-icon">
       <h3 class="visual-hidden">Связаться с нами в соцсетях.</h3>
-      <a class='social-icon__link' href="https://vk.com/htmlacademy">
+      <a class="social-icon__link" href="https://vk.com/htmlacademy">
        <span class="visual-hidden">Ссылка на нашу страницу в Вконтакте.</span>
         <svg class="social-icon__vk-icon" width="24" height="24" aria-hidden="true" focusable="false">
-          <use href="./img/icons/sprite/icon-vk.svg#icon-vk"></use>
+          <use href="./img/sprite.svg#icon-vk"></use>
         </svg>
       </a>
-      <a class='social-icon__link' href="https://t.me/htmlacademy">
+      <a class="social-icon__link" href="https://t.me/htmlacademy">
         <span class="visual-hidden">Ссылка на наш канал в телеграмме.</span>
         <svg class="social-icon__telegram-icon" width="24" height="24" aria-hidden="true" focusable="false">
-          <use href="./img/icons/sprite/icon-telegram.svg#icon-telegram"></use>
+          <use href="./img/sprite.svg#icon-telegram"></use>
         </svg>
       </a>
-      <a class='social-icon__link'  href="https://www.youtube.com/htmlacademyru">
+      <a class="social-icon__link"  href="https://www.youtube.com/htmlacademyru">
         <span class="visual-hidden">Ссылка на наш канал в ютубе.</span>
         <svg class="social-icon__youtube-icon" width="24" height="24" aria-hidden="true" focusable="false">
-          <use href="./img/icons/sprite/icon-youtube.svg#icon-youtube"></use>
+          <use href="./img/sprite.svg#icon-youtube"></use>
         </svg>
       </a>
     </div>
     <div class="main-footer__developed developed">
       <p>разработано</p>
-      <a class='developed__html-academy' href='https://htmlacademy.ru/intensive/adaptive'>
+      <a class="developed__html-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visual-hidden">Ссылка на сайт htmlacademy.</span>
         <svg class="developed__html-academy-icon" width="27" height="35" aria-hidden="true" focusable="false">
-          <use href="./img/icons/sprite/icon-htmlacademy.svg#icon-htmlacademy"></use>
+          <use href="./img/sprite.svg#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>

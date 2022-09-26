@@ -15,10 +15,10 @@
     height: 57px;
     transform: translateX(50%);
     content: "";
-    background-image: url("../../img/intro-triangle.svg.svg");
+    background-image: url("../../img/icons/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
-    bottom: -0.75px;
+    bottom: 0;
     right: 50%;
     box-shadow: 0 2px 2px 0 $bg-color;
   }
@@ -41,12 +41,14 @@
 
   &__text-image {
     position: absolute;
-    top: 48%;
-    right: 50%;
+    top: 50.5%;
+    right: 49.8%;
     transform: translate(50%, -50%);
     display: block;
 
     @media (min-width: $tablet-width) {
+      top: 48.55%;
+      right: 50.05%;
       width: 461px;
       height: 350px;
     }
@@ -54,12 +56,14 @@
     @media (min-width: $desktop-width) {
       width: 459.5px;
       height: 349.97px;
+      top: 48.9%;
+      right: 50%;
     }
   }
 
   &__image {
     position: absolute;
-    top: 50%;
+    top: 41%;
     right: 50%;
     transform: translate(50%, -50%);
     display: block;
@@ -83,8 +87,13 @@
   background-image: url("../../img/form/back-mobile-form@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 100%;
+  background-position: 0 144%;
   height: 158px;
+
+  &::after {
+    bottom: 17px;
+    box-shadow: 0 21px 0 0 $bg-color;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/form/back-mobile-form@2x.jpg");
