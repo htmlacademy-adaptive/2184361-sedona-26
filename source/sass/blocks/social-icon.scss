@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   gap: 6px;
-  padding: 0;
+  padding-left: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 4px;
+    margin-right: 6px;
   }
 }
 

@@ -8,6 +8,23 @@
   padding-bottom: 16px;
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 37px;
+      transform: translateX(50%);
+      content: "";
+      background-image: url("../../img/icons/triangle.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: -37px;
+      right: 50%;
+      z-index: 1;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-bottom: 55px;
@@ -64,7 +81,11 @@
 
 .benefits__description-number {
   margin-top: 11px;
-  margin-bottom: 23px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .benefits__description {
@@ -72,7 +93,7 @@
 }
 
 .benefits__description--wrapper {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 @media (max-width: $mobile-width-only) {
