@@ -63,7 +63,7 @@
 
   &__image {
     position: absolute;
-    top: 50%;
+    top: 41%;
     right: 50%;
     transform: translate(50%, -50%);
     display: block;
@@ -87,8 +87,13 @@
   background-image: url("../../img/form/back-mobile-form@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 100%;
+  background-position: 0 144%;
   height: 158px;
+
+  &::after {
+    bottom: 17px;
+    box-shadow: 0 21px 0 0 $bg-color;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/form/back-mobile-form@2x.jpg");

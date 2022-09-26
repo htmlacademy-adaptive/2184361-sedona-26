@@ -9,7 +9,7 @@
 }
 
 .feedback__title {
-  margin: 0 auto 24px;
+  margin: -17px auto 24px;
   text-align: center;
 }
 
@@ -21,6 +21,7 @@
 
 .feedback__form {
   margin: 0;
+  margin-bottom: -22px;
 }
 
 @media (min-width: $tablet-width) {

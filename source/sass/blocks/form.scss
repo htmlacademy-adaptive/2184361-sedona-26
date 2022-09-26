@@ -9,7 +9,8 @@
 
 .form__title {
   display: block;
-  margin: 0 auto 4px;
+  margin: 0 -1px 4.5px;
+  text-align: center;
 
   &::before {
     display: block;
@@ -42,6 +43,10 @@
     .form__title {
       text-align: center;
     }
+  }
+
+  &--impression-point {
+    margin: 0 0 48px;
   }
 }
 
@@ -175,9 +180,11 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  min-width: 280px;
+  width: 280px;
   min-height: 150px;
   padding: 16px;
+  margin-top: 16px;
+  margin-bottom: -6px;
   border: none;
   background-color: $bg-color-input;
 
@@ -205,6 +212,7 @@
 
 .form__text {
   font-size: 12px;
+  margin-top: -4px;
   color: $text-third;
   text-transform: uppercase;
   align-self: end;
