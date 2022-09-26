@@ -177,6 +177,10 @@
         margin-left: 0;
         margin-top: 23px;
       }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 22px;
+      }
     }
   }
 
@@ -208,6 +212,11 @@
 
         margin-top: 23px;
         margin-left: 1px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 22px;
+        margin-left: -1px;
       }
     }
   }
@@ -272,7 +281,13 @@
 
     .benefits-list__item-order {
       order: 2;
-      padding-top: 43px;
+      padding-top: 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .benefits-list__item-order {
+      padding-top: 49px;
     }
   }
 }

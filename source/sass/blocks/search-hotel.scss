@@ -52,3 +52,17 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .search-hotel__heading {
+    margin-bottom: 32px;
+  }
+
+  .search-hotel__description {
+    margin-bottom: 47px;
+  }
+
+  .search-hotel__button {
+    margin-bottom: 68px;
+  }
+}

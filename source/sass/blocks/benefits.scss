@@ -29,6 +29,11 @@
     padding-top: 17px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-bottom: 45px;
+  }
 }
 
 .benefits__header-title {
@@ -92,11 +97,16 @@
   margin: 0;
 }
 
+.benefits__description-brige {
+  margin-right: 3px;
+}
+
 .benefits__description--wrapper {
   margin-right: 6px;
 }
 
 @media (max-width: $mobile-width-only) {
+  .benefits__description-№2-br-desktop,
   .benefits__description-№3-br-tablet,
   .benefits__description-№3-br-desktop,
   .benefits__description-№4-br-tablet,
@@ -109,6 +119,7 @@
 
 @media (min-width: $tablet-width) {
   .benefits__description-№1-br-mobile,
+  .benefits__description-№2-br-desktop,
   .benefits__description-№3-br-mobile,
   .benefits__description-№3-br-desktop,
   .benefits__description-№4-br-mobile,
@@ -118,10 +129,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .benefits__description-№2-br-mobile,
   .benefits__description-№3-br-tablet,
   .benefits__description-№4-br-tablet,
   .benefits__description-№5-br-tablet {
     display: none;
+  }
+
+  .benefits__description-№1-br-mobile,
+  .benefits__description-№2-br-desktop {
+    display: block;
   }
 }
 
